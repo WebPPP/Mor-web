@@ -8,7 +8,7 @@ using WebApplication1.Models;
 
 namespace Site.Controllers
 {
-    [SessionAuthorize]
+    //[SessionAuthorize]
     public class ShopController : Controller
     {
         OrderCrude Orders = new OrderCrude();
@@ -16,6 +16,13 @@ namespace Site.Controllers
         private ShoppingCart cart;
         OrderCrude db;
         private Bank1SoapClient bank = new Bank1SoapClient();
+
+        [AllowAnonymous]
+        public ActionResult Index()
+        {
+            var items = product.findAll();
+            return View(items.ToList());
+        }
 
         [AllowAnonymous]
         public ActionResult Shop()

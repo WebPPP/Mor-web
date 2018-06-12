@@ -35,6 +35,7 @@ namespace WebApplication1.Controllers
             return View();
         }
         [HttpGet]
+        [Route("Login")]
         public ActionResult logIn()
         {
             ViewBag.Message = "Your contact page.";
@@ -50,6 +51,7 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
         [System.Web.Mvc.HttpPost]
         public ActionResult login(User UserPN)
         {
@@ -67,10 +69,13 @@ namespace WebApplication1.Controllers
             {
                 return View("logIn");
             }
-            Session["User"] = UserPN as User;
-            Session["Username"] = UserPN.name;
-            Session["Userpassword"] = UserPN.password;
-            Session["Order"] =  new Order { UserId = UserPN.id};
+            Session.Clear();
+            Session["User"] = RealUser as User;
+            Session["UserName"] = RealUser.name;
+            Session["Userpassword"] = RealUser.password;
+            Session["UserGeder"] = RealUser.gender;
+            Session["UserId"] = RealUser.id;
+            Session["Order"] =  new Order { UserId = RealUser.id};
             return View("index");
         }
         // GET: User
@@ -91,9 +96,12 @@ namespace WebApplication1.Controllers
             {
                 MvcApplication.ViewCheck = "LogedIn";
                 Model.Create(NewUser);
+                Session.Clear();
                 Session["User"] = NewUser as User;
-                Session["Username"] = NewUser.name;
+                Session["UserName"] = NewUser.name;
                 Session["Userpassword"] = NewUser.password;
+                Session["UserGeder"] = NewUser.gender;
+                Session["UserId"] = NewUser.id;
                 Session["Order"] = new Order { UserId = NewUser.id };
             }
             return RedirectToAction("Index");

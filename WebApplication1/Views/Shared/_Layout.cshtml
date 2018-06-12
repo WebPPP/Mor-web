@@ -36,13 +36,13 @@
 
                             case "LogedIn":
                                 <li><a href=#><span class="glyphicon glyphicon-user"></span> @Session["Username"]</a></li>
-                                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+                                <li><a href=@Url.Action("index", "Shop")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
                                 <li><a href=@Url.Action("Logout", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
 
                                 break;
                             case "admin":
                                 <li><a href=#><span class="glyphicon glyphicon-user"></span> @Session["Username"]</a></li>
-                                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+                                <li><a href=@Url.Action("index", "Shop")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
                                 <li><a href=@Url.Action("AdminPlace", "Home")><span class="glyphicon glyphicon-cog "></span> Option</a></li>
                                 <li><a href=@Url.Action("Logout", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
 

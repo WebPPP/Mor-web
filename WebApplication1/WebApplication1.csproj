@@ -279,6 +279,7 @@
     <Content Include="Views\Shop\SendOrder.cshtml" />
     <Content Include="Views\Shop\ViewCart.cshtml" />
     <Content Include="Views\Shop\ViewOrders.cshtml" />
+    <Content Include="Views\Shop\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -300,16 +301,16 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DabisBank\DabisBank.csproj">
-      <Project>{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}</Project>
-      <Name>DabisBank</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\Dabis\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DabisBank\DabisBank.csproj">
+      <Project>{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}</Project>
+      <Name>DabisBank</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
