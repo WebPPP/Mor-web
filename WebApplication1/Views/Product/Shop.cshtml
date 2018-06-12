@@ -1,0 +1,398 @@
+﻿@{
+    ViewBag.Title = "Shop";
+    const string imgPath = "/images/";
+}
+@section scripts{<script src="~/Scripts/Shop.js"></script> }
+<link rel="stylesheet" type="text/css" href="~/Content/Shop.css" />
+
+<h3>@ViewBag.Message</h3>
+@*<ul style="display:block">
+        @{ foreach (var item in ViewBag.Products)
+            {
+                <li class="col-md-4"><img src="~/App_Data/Photos/images/" + @item.ImgUrl /></li>"
+            }
+        }
+    </ul>*@
+<div class="header">
+    <h1>
+        Your cart
+    </h1>
+</div>
+<div class="cart-container">
+    <div class="empty" style="display:none">
+        No more twinkies !
+    </div>
+    <ul class="cart">
+        <div class="row">
+            <div class="col-"
+            </div>
+            @foreach (var item in ViewBag.Products)
+        {
+
+            <li class="product" data-price="@item.price" data-quantity="0">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="@imgPath@item.ImgUrl" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            @item.name
+                        </div>
+                        <div class="product-price">
+                            @item.price$
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x0
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    @*<div class="button del"></div>*@
+                </div>
+            </li>
+            <li class="product" data-price="@item.price" data-quantity="0">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="@imgPath@item.ImgUrl" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            @item.name
+                        </div>
+                        <div class="product-price">
+                            @item.price$
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x0
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    @*<div class="button del"></div>*@
+                </div>
+            </li>
+            <li class="product" data-price="@item.price" data-quantity="0">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="@imgPath@item.ImgUrl" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            @item.name
+                        </div>
+                        <div class="product-price">
+                            @item.price$
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x0
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    @*<div class="button del"></div>*@
+                </div>
+            </li>
+    }
+
+            @*<li class="product" data-price="3.5" data-quantity="1">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/ponytails-coffee-time-coffee-cup3.png" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Coffee
+                        </div>
+                        <div class="product-price">
+                            $ 3.50
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x1
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="5.7" data-quantity="3">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/Chocolate.png" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Chocolate
+                        </div>
+                        <div class="product-price">
+                            $ 5.70
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x3
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="6.9" data-quantity="1">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/waffle-homestyle.png" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Waffle
+                        </div>
+                        <div class="product-price">
+                            $ 6.90
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x1
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="3.9" data-quantity="2">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/donuts.jpg" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Donuts
+                        </div>
+                        <div class="product-price">
+                            $ 3.90
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x2
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="6.5" data-quantity="1">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/raspberry-sorbet.gif" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Sorbet
+                        </div>
+                        <div class="product-price">
+                            $ 6.50
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x1
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="1.8" data-quantity="3">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/croissant-psd49504.png" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            French Croissant
+                        </div>
+                        <div class="product-price">
+                            $ 1.80
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x3
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="2.5" data-quantity="1">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/Macaron.png" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Macaron
+                        </div>
+                        <div class="product-price">
+                            $ 2.50
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x1
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="2.5" data-quantity="1">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/millefeuille-vanille.jpg" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Mille-feuille
+                        </div>
+                        <div class="product-price">
+                            $ 12.90
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x1
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>
+            <li class="product" data-price="9.9" data-quantity="1">
+                <div class="product-preview">
+                    <div class="thumbnail">
+                        <img class="image" src="https://s.cdpn.io/24822/tarte-au-citron.jpg" />
+                    </div>
+                    <div class="product-paper">
+                        <div class="product-name">
+                            Lemon Pie
+                        </div>
+                        <div class="product-price">
+                            $ 9.90
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quantity">
+                    x1
+                </div>
+                <div class="product-interactions">
+                    <div class="button plus">
+                        +
+                    </div>
+                    <div class="button minus">
+                        -
+                    </div>
+                    <div class="button del"></div>
+                </div>
+            </li>*@
+    </ul>
+</div>
+<table class="bill">
+    <tr class="subtotal">
+        <td class="label">
+            Subtotal :
+        </td>
+        <td class="value">
+            $ 71.90
+        </td>
+    </tr>
+    <tr class="salestax">
+        <td class="label">
+            Sales tax :
+        </td>
+        <td class="value">
+            $ 3.60
+        </td>
+    </tr>
+    <tr>
+        <td class="label">
+            Shipping :
+        </td>
+        <td class="value">
+            $ 5.00
+        </td>
+    </tr>
+    <tr class="total">
+        <td class="label">
+            Total :
+        </td>
+        <td class="value">
+            $ 80.50
+        </td>
+    </tr>
+</table>
+<div class="actions">
+    <div class="big-button go">
+        Get them !
+    </div>
+</div>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Error.css" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/Errorjs.js")"></script>
+    <script src="@Url.Content("~/Scripts/Shop.js")"></script>
+    @Styles.Render("~/Content/Error.css")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-image : url(/images/webBackground.jpg); color:white" >
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=@Url.Action("Index", "Home")><span class="glyphicon glyphicon-home"></span> Home</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @{
+        
+
+        switch (MvcApplication.ViewCheck)
+        {
+
+            case "LogedIn":
+                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+
+break;
+case "admin":
+                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+                <li><a href=@Url.Action("AdminPlace", "Home")><span class="glyphicon glyphicon-cog "></span> Option</a></li>
+                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+
+break;
+default:
+                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
+                <li><a href=@Url.Action("login", "Home")><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+break;
+}
+                    }
+                </ul>
+            </div>@*@Html.ActionLink("Sing UP", "Register", "Home", null,new { Style = "font-family : Helvetica Neue, Helvetica, Arial" })*@
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/Errorjs")
+    @RenderSection("Styles", required: false)
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<body>
+    <h2>Users</h2>
+    <table border="1">
+        <tr>
+            <th>UserName</th>
+            <th>Password</th>
+            <th>gender</th>
+            <th>Email</th>
+        </tr>
+        @foreach (var item in ViewBag.Users)
+        { 
+            <tr>
+                <td>@item.name</td>
+                <td>@item.password</td>
+                @{ if (item.gender)
+                    {
+                        <td>Male</td>}
+                    else
+                    {
+                        <td> Female </td>}
+                }
+                <td>@item.Email</td>
+                <td>
+                    <a href="@Url.Action("Delete","Home",new {id = item.id })" onclick="return confirm('are you sure')">Delete</a>
+                    <a href="@Url.Action("Update","Home" ,new {id = item.id})">Update</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+</body>
