@@ -78,6 +78,8 @@
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -174,23 +176,38 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Connected Services\Dabis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\DbRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IDbManege.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\interfaces\IDbManager.cs" />
     <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\ordercrude.cs" />
+    <Compile Include="Models\OrderCrude.cs" />
+    <Compile Include="Models\OrderLine.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductCrud.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserCrud.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\Dabis\Bank.disco" />
+    <None Include="Connected Services\Dabis\configuration91.svcinfo" />
+    <None Include="Connected Services\Dabis\configuration.svcinfo" />
+    <None Include="Connected Services\Dabis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\Shop.css" />
     <Content Include="images\Adidas-Shoes%282%29.jpg" />
     <Content Include="images\Adidas-Shoes.jpg" />
@@ -212,6 +229,19 @@
     </Content>
     <Content Include="ClassDiagram1.cd" />
     <Content Include="ClassDiagram2.cd" />
+    <None Include="Connected Services\Dabis\Bank.wsdl" />
+    <Content Include="Connected Services\Dabis\WebApplication1.Dabis.CashInAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Dabis\WebApplication1.Dabis.ChargeAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Dabis\WebApplication1.Dabis.CreateBankAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Dabis\WebApplication1.Dabis.hasBankAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Errorjs.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -244,6 +274,11 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\AdminPlace.cshtml" />
     <Content Include="Views\Home\Update.cshtml" />
+    <Content Include="Views\Shop\OrderDetails.cshtml" />
+    <Content Include="Views\Shop\Payment.cshtml" />
+    <Content Include="Views\Shop\SendOrder.cshtml" />
+    <Content Include="Views\Shop\ViewCart.cshtml" />
+    <Content Include="Views\Shop\ViewOrders.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -263,6 +298,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DabisBank\DabisBank.csproj">
+      <Project>{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}</Project>
+      <Name>DabisBank</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\Dabis\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

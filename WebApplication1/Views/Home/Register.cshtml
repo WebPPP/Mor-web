@@ -21,7 +21,7 @@
         <div class="col-md-4">
             <h1 style="font-family:Century">Register</h1>
 
-            @using (Html.BeginForm("Add", "Home", FormMethod.Post, new { id = "contact" }))
+            @using (Html.BeginForm("Register", "Home", FormMethod.Post, new { id = "contact" }))
 
             {
                 @Html.ValidationSummary(false, "", new { @class = "text-danger" });

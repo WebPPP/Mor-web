@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{F7CFF477-ADC2-450A-A955-71F6F713CFAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DabisBank", "DabisBank\DabisBank.csproj", "{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{F7CFF477-ADC2-450A-A955-71F6F713CFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7CFF477-ADC2-450A-A955-71F6F713CFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7CFF477-ADC2-450A-A955-71F6F713CFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D3638A-1EB0-4ADF-8387-F2BB0972CBF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {753C3F90-A4DD-4929-95EF-A8F71A3C2FBE}
 	EndGlobalSection
 EndGlobal

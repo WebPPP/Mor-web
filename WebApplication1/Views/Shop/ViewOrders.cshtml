@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Site.Models.Orders>
+
+@{
+    ViewBag.Title = "Orders";
+}
+
+<h2>Orders</h2>
+
+<table class="table">
+    <tr>
+        <th width="15%">
+            Order ID
+        </th>
+        <th width="25%">
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th width="40%">
+            @Html.DisplayNameFor(model => model.Users.UserName)
+        </th>
+        <th width="20%">
+
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Users.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Order Details", "OrderDetails", new { id = item.OrderID })
+        </td>
+
+    </tr>
+}
+
+</table>

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Site.Models.OrderLine>
+
+@{
+    ViewBag.Title = "OrderDetails";
+}
+
+<h2>Order ID: @ViewBag.OrderID</h2>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Items.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PricePerItem)
+            </th>
+            <th>
+                Subtotal
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Items.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PricePerItem)
+                </td>
+                <td>
+                    @times(item.Amount, item.PricePerItem)
+                </td>
+                <td>
+                    <a target="_blank" href="@Url.Action("Details", "Items", new { id = item.ItemID})" >Item Details</a>
+                </td>
+            </tr>
+        }
+    </table>
+    @TotalPrice()
+    <div style="margin-left:40%; margin-top:10%">
+        <a href="@Url.Action("ViewOrders", "Shop")" class="btn btn-primary">Return to Orders</a>
+    </div>
+</div>
+
+@helper times(int a, int b)
+{
+    float sum = a * b;
+    <p>
+        @sum
+    </p>
+}
+
+@helper TotalPrice()
+{
+    float totalPrice = 0;
+    foreach (var line in Model)
+    {
+        totalPrice += line.PricePerItem * line.Amount;
+    }
+
+    <p style="font-size:175%">@String.Format("Order Total: {0:C}", totalPrice) </p>
+}

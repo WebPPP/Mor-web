@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="hasBankAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="hasBankAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hasBankAccountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBankAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBankAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateBankAccountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CashInAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CashInAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CashInAccountResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargeAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CashToCharge" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargeAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChargeAccountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="hasBankAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:hasBankAccount" />
+  </wsdl:message>
+  <wsdl:message name="hasBankAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:hasBankAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateBankAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateBankAccount" />
+  </wsdl:message>
+  <wsdl:message name="CreateBankAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateBankAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="CashInAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:CashInAccount" />
+  </wsdl:message>
+  <wsdl:message name="CashInAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:CashInAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargeAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:ChargeAccount" />
+  </wsdl:message>
+  <wsdl:message name="ChargeAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:ChargeAccountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Bank1Soap">
+    <wsdl:operation name="hasBankAccount">
+      <wsdl:input message="tns:hasBankAccountSoapIn" />
+      <wsdl:output message="tns:hasBankAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateBankAccount">
+      <wsdl:input message="tns:CreateBankAccountSoapIn" />
+      <wsdl:output message="tns:CreateBankAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CashInAccount">
+      <wsdl:input message="tns:CashInAccountSoapIn" />
+      <wsdl:output message="tns:CashInAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargeAccount">
+      <wsdl:input message="tns:ChargeAccountSoapIn" />
+      <wsdl:output message="tns:ChargeAccountSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Bank1Soap" type="tns:Bank1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="hasBankAccount">
+      <soap:operation soapAction="http://tempuri.org/hasBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBankAccount">
+      <soap:operation soapAction="http://tempuri.org/CreateBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CashInAccount">
+      <soap:operation soapAction="http://tempuri.org/CashInAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargeAccount">
+      <soap:operation soapAction="http://tempuri.org/ChargeAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Bank1Soap12" type="tns:Bank1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="hasBankAccount">
+      <soap12:operation soapAction="http://tempuri.org/hasBankAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBankAccount">
+      <soap12:operation soapAction="http://tempuri.org/CreateBankAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CashInAccount">
+      <soap12:operation soapAction="http://tempuri.org/CashInAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargeAccount">
+      <soap12:operation soapAction="http://tempuri.org/ChargeAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Bank1">
+    <wsdl:port name="Bank1Soap" binding="tns:Bank1Soap">
+      <soap:address location="http://dabisbank.gear.host/Bank.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Bank1Soap12" binding="tns:Bank1Soap12">
+      <soap12:address location="http://dabisbank.gear.host/Bank.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

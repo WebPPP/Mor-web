@@ -13,9 +13,10 @@ namespace WebApplication1.Controllers
     public class HomeController : Controller
     {
         private UserCrud Model = new UserCrud();
+
+
         public ActionResult Index()
         {
-            
             return View();
         }
 
@@ -33,14 +34,15 @@ namespace WebApplication1.Controllers
 
             return View();
         }
-
+        [HttpGet]
         public ActionResult logIn()
         {
             ViewBag.Message = "Your contact page.";
-            
+         
 
             return View();
         }
+        [HttpGet]
         public ActionResult Register()
         {
             ViewBag.Message = "Your contact page.";
@@ -49,7 +51,7 @@ namespace WebApplication1.Controllers
             return View();
         }
         [System.Web.Mvc.HttpPost]
-        public ActionResult InDatabase(User UserPN)
+        public ActionResult login(User UserPN)
         {
 
             var RealUser = Model.findByName(UserPN.name);
@@ -65,6 +67,10 @@ namespace WebApplication1.Controllers
             {
                 return View("logIn");
             }
+            Session["User"] = UserPN as User;
+            Session["Username"] = UserPN.name;
+            Session["Userpassword"] = UserPN.password;
+            Session["Order"] =  new Order { UserId = UserPN.id};
             return View("index");
         }
         // GET: User
@@ -74,7 +80,7 @@ namespace WebApplication1.Controllers
             return View("AdminPlace");
         }
         [HttpPost]
-        public ActionResult Add(User NewUser)
+        public ActionResult Register(User NewUser)
         {
             if (Model.findByName(NewUser.name) != null)
             {
@@ -85,6 +91,10 @@ namespace WebApplication1.Controllers
             {
                 MvcApplication.ViewCheck = "LogedIn";
                 Model.Create(NewUser);
+                Session["User"] = NewUser as User;
+                Session["Username"] = NewUser.name;
+                Session["Userpassword"] = NewUser.password;
+                Session["Order"] = new Order { UserId = NewUser.id };
             }
             return RedirectToAction("Index");
         }
@@ -105,6 +115,13 @@ namespace WebApplication1.Controllers
         {
             var model = Model.find(id);
             return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Logout()
+        {
+            Session.Abandon();
+            return RedirectToAction("Index", "Home");
         }
 
     }

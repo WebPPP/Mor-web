@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Site.Models.OrderLine>
+@using Site.Models
+
+@{
+    ViewBag.Title = "Order Details";
+    int lineNum = 0;
+}
+
+<h2>
+    Order Details
+</h2>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th width="55%">Description</th>
+            <th>Price</th>
+            <th>Amount</th>
+            <th>Total Price</th>
+            <th>Remove</th>
+        </tr>
+        @foreach (var line in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(model => line.Items.Name)</td>
+                <td>@Html.DisplayFor(model => line.Items.Description)</td>
+                <td>@Html.DisplayFor(model => line.PricePerItem)</td>
+                <td>@Html.DisplayFor(model => line.Amount)</td>
+                <td>@Html.DisplayFor(model => line.SubTotal)</td>
+                <td><a href="@Url.Action("RemoveItem", "Shop", new { id = lineNum})" class="btn btn-default">Remove Item</a></td>
+            </tr>
+            lineNum++;
+        }
+    </table>
+    @TotalPrice()
+    <div style="margin-left:90%">
+        @Html.Partial("Payment")
+    </div>
+</div>
+
+@helper TotalPrice()
+{
+    float totalPrice = 0;
+    foreach (var line in Model)
+    {
+        totalPrice += line.SubTotal;
+    }
+    
+    <p style="font-size:175%">@String.Format("Order Total: {0:C}", totalPrice) </p>
+}

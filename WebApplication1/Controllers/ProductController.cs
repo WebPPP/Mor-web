@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace WebApplication1.Controllers
 {
     public class ProductController : Controller
     {
+        OrderCrude Orders = new OrderCrude();
         ProductCrud product = new ProductCrud();
         // GET: Product
         public ActionResult Shop()
@@ -16,5 +18,12 @@ namespace WebApplication1.Controllers
             ViewBag.Products = product.findAll();
             return View();
         }
+        [HttpPost]
+        public ActionResult AddToCart(ObjectId ProductId )
+        {
+            return View();
+        }
+
+
     }
 }

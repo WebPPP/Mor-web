@@ -1,0 +1,33 @@
+﻿@model DabisBank.Models.Accounts
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@ViewBag.userName</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCash)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalCash)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Home Page", "Index", "Home")
+</p>

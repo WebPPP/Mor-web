@@ -1,0 +1,58 @@
+﻿@using Site.Models
+@using Site.BankService;
+@{
+    ShoppingCart cart = Session["Cart"] as ShoppingCart;
+    Users user = Session["User"] as Users;
+    Bank1SoapClient bank = new Bank1SoapClient();
+    double total = 0;
+}
+
+@if (cart.totalCash > 0) 
+{ 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PurchaseModal">Pay</button>
+}
+else
+{
+    <p>You have got to add something to the cart..</p>
+}
+
+<div class="modal fade" id="PurchaseModal" tabindex="-1" role="dialog" aria-labelledby="PurchaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="PurchaseModalLabel">Credit Details</h4>
+            </div>
+            @using (Html.BeginForm("Payment", "Shop", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="modal-body">
+                    @foreach (var line in cart.orderLines)
+                    {
+                        total += line.SubTotal;
+                        <div class="row">
+                            <div class="col-md-4">
+                                @line.Amount * @line.Items.Name:
+                            </div>
+                            <div class="col-md-8">
+                                @string.Format("{0:C}", line.SubTotal)
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <label style="margin-right:45%"> @string.Format("Total: {0:C}", total) </label>
+                    @if (bank.hasBankAccount(user.UserID))
+                    {
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Purchase" class="btn btn-success" />
+                    }
+                    else
+                    {
+                        <a href="http://dabisbank.gearhostpreview.com/" class="btn btn-primary">Create Bank Account</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>

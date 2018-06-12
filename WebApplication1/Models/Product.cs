@@ -18,8 +18,6 @@ namespace WebApplication1.Models
         public int price { get; set; }
         [BsonElement("StockAmount")]
         public int StockAmount { get; set; }
-        [BsonElement("OrderAmount")]
-        public int OrderAmount { get; set; }
         [BsonElement("ImgUrl")]
         public string ImgUrl { get; set; }
 

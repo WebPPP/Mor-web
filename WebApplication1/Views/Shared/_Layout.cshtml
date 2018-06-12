@@ -29,28 +29,30 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @{
-        
 
-        switch (MvcApplication.ViewCheck)
-        {
 
-            case "LogedIn":
-                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
-                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                        switch (MvcApplication.ViewCheck)
+                        {
 
-break;
-case "admin":
-                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
-                <li><a href=@Url.Action("AdminPlace", "Home")><span class="glyphicon glyphicon-cog "></span> Option</a></li>
-                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                            case "LogedIn":
+                                <li><a href=#><span class="glyphicon glyphicon-user"></span> @Session["Username"]</a></li>
+                                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+                                <li><a href=@Url.Action("Logout", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
 
-break;
-default:
-                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
-                <li><a href=@Url.Action("login", "Home")><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                break;
+                            case "admin":
+                                <li><a href=#><span class="glyphicon glyphicon-user"></span> @Session["Username"]</a></li>
+                                <li><a href=@Url.Action("Shop", "Product")><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+                                <li><a href=@Url.Action("AdminPlace", "Home")><span class="glyphicon glyphicon-cog "></span> Option</a></li>
+                                <li><a href=@Url.Action("Logout", "Home")><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
 
-break;
-}
+                                break;
+                            default:
+                                <li><a href=@Url.Action("Register", "Home")><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
+                                <li><a href=@Url.Action("login", "Home")><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                                break;
+                        }
                     }
                 </ul>
             </div>@*@Html.ActionLink("Sing UP", "Register", "Home", null,new { Style = "font-family : Helvetica Neue, Helvetica, Arial" })*@
