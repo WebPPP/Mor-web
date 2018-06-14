@@ -9,7 +9,7 @@ namespace DabisBank.Controllers
 {
     public class HomeController : Controller
     {
-        private BankDB bankDB = new BankDB();
+        private MorBankEntities bankDB = new MorBankEntities();
 
         [SessionAuthorize, Route("")]
         public ActionResult Index()
@@ -21,6 +21,7 @@ namespace DabisBank.Controllers
                 ViewBag.hasBank = true;
             return View();
         }
+
         [Route("About")]
         [AllowAnonymous]
         public ActionResult About()

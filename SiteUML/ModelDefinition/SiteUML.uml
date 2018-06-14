@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f641f332-5b1a-4251-a85a-e1a8b957c54b"
+  name="SiteUML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="32affb9b-d9da-434e-980c-7c17f319bb9c">
+      <body>המחלקה האחראית על ביצוע כל הפעולות על מאגר הנתונים
+DAL
+
+Departments - אחראי על נתוני המחלקות
+Items - אחראי על נתוני הפריטים
+OrderLines - אחראי על נתוני שורות המכירה
+Orders - אחראי על נתוני ההזמנות
+Roles - אחראי על נתוני התפקידים
+Users - אחראי על נתוני המשתמשים
+__________________________________
+
+SiteDBEtities() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="f9e53d16-b540-4d07-8de2-4803db75cc6d">
+      <body>מחלקה לייצוג מחלקות הפריטים
+
+DepartmentID - מאפיין מחלקה
+Items - קישור לפריט
+Name - שם המחלקה
+__________________________
+
+Departments() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="30959d42-16b1-47a9-af9e-215335a08ab9">
+      <body>מחלקה לייצוג הפריטים
+
+DepartmentID - מאפיין מחלקה
+Departments - מחלקה
+Description - תיאור פריט
+Img - תמונת פריט
+ItemID - מאפיין פריט
+Name - שם הפריט
+OrderLine - קישור לשורת מכירה
+Price - מחיר הפריט
+__________________________
+
+Items() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="e1c73deb-d2e4-4e13-801a-ccac7e70d5ab">
+      <body>מחלקה לייצוג שורה בעגלת הקניות
+
+Amount - כמות
+ID - מאפיין
+ItemID - מאפיין פריט
+Items - פריט
+OrderID - מאפיין הזמנה
+Orders - הזמנה
+PricePerItem - מחיר מוצר
+SubTotal - סכום השורה
+
+___________________________________
+
+OrderLine(orderID, amount, price) - קונסטרקטור
+OrderLine() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="b13c4caa-fb51-448a-aa3f-08c9c640ed0e">
+      <body>מחלקה לייצוג הזמנה ללקוח
+
+Date - תאריך ההזמנה
+OrderID - מאפיין ההזמנה
+OrderLine - קישור שורות הזמנה להזמנה
+UserID - מאפיין המשתמש
+Users - המשתמש שמבצע את ההזמנה
+_____________________________
+
+Orders(user) - קונסטרקטור
+Orders() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="45369e12-4e13-4197-b2f3-5d829f2dec53">
+      <body>מחלקה לייצוג משתמש
+
+Address - כתובת המשתמש
+Email - אימייל המשתמש
+Name - שם המשתמש
+Orders - קישור ההזמנות למשתמש
+Password - סיסמת המשתמש
+RoleID - מאפיין תפקיד המשתמש
+Roles - תפקיד המשתמש
+UserID - מאפיין משתמש
+UserName - כינוי המשתמש
+__________________________
+
+AddUser() - SQL בניית משפט
+Users() - קונסטקטור
+ValuesToString() - ערכי המשתמש</body>
+    </comment>
+    <comment
+      Id="c1c0c6b6-4107-485b-9a64-4bd48dd10e9b">
+      <body>מחלקה לייצוג תפקיד המשתמש
+
+Name - שם התפקיד
+RoleID - מאפיין התפקיד
+Users - קישור למשתמש
+________________________
+
+Roles() - בנאי</body>
+    </comment>
+    <comment
+      Id="8639f8cc-ad4d-4561-ae02-af67a590a4ea">
+      <body>מחלקה לייצוג עגלת קניות
+
+orderLines - אחראי על שורות המכירה
+totalCash - סה"כ סכום המכירה
+db - משתנה האחראי על בסיס הנתונים
+orders - אחראי על ההזמנות בעגלת הקניות
+______________________________________
+
+addToCart(item, amount) - הוספת פריט לעגלה
+existInCart(item) - בדיקה האם המוצר קיים בעגלה
+RemoveLine(lineID) - הסרת שורת מכירה
+sendOrder() - שמירת המכירה בבסיס הנתונים וחיוב
+ShoppingCart(user) - קונסטרקטור
+ShoppingCart() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="df4d75df-197d-4786-b8ce-9073f0f1f761">
+      <body>Data Annotations מחלקות לאפיון המשתנים בעזרת 
+</body>
+    </comment>
+    <comment
+      Id="67da2fcb-06af-42dd-aebb-1ef3f29e27e8">
+      <body>מחלקה המייצגת את בקר הבית
+
+About() - "הפעולה האחראית על דף "אודות
+Contact() - "הפעולה האחראית על דף "צוק קשר
+Error() - הפעולה האחראית על דפי הארור
+HomeController() - קונסטרקטור
+Index() - הפעולה האחראית על דף הבית</body>
+    </comment>
+    <comment
+      Id="fecaba3f-0774-4b59-bb78-928237151b3a">
+      <body>מחלקה המייצגת את בקר הפריטים
+
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+Create() GET - פעולה האחראית ליצירת מוצר
+Create(item) POST
+Delete(id) GET - פעולה האחראית למחיקת מוצר
+DeleteConfirmed(id) POST
+Details(id) GET - פעולה המציגה פרטים לגבי פריט מסוים
+Edit(id) GET - פעולה האחראית לערוך מוצר
+Edit(item) POST
+Index() - פעולה האחראית להצגת כל הפריטים
+ItemsController() - קונסטרקטור</body>
+    </comment>
+    <comment
+      Id="c47807cc-380b-4354-b09b-d657fbaa4770">
+      <body>מחלקה המייצגת את בקר החנות
+
+bank - משתנה הווב סרביס
+cart - משתנה האחראי על עגלת הקניות
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+ShopController() - קונסטרקטור
+
+User:
+AddToCart(id) - פעולה המוסיפה מוצר לעגלת הקניות
+Browse(departmentID) - הצגת המוצרים ע"פ מחלקה
+Payment() GET - פעולה האחראית לסיום הקנייה
+FinishPayment() POST
+Index() - פעולה המציגה את המוצרים
+OrderDetails(id) - הצגת פרטים להזמנה ספציפית
+RemoveItem(id) - הסרת פריט מעגלת הקניות
+ViewCart() - הצגת מצב עגלת הקניות
+ViewOrders() - הצגת כל ההזמנות למשתמש ספציפי
+
+Admin:
+AdminDeleteOrder(id) - פעולה המוחקת הזמנה
+AdminOrders(id) - הצגת כל ההזמנות שבוצעו ממשתמש</body>
+    </comment>
+    <comment
+      Id="8fd37703-9201-4397-b418-932d64f2b341">
+      <body>מחלקה המייצגת את בקר המשתמש
+
+bank - משתנה הווב סרביס
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+AccountController() - קונסטרקטור
+Edit() GET - עריכת משתמש
+Edit(user) POST
+Login() GET - התחברות לאתר
+Login(loginUser) POST
+Logout() - התנתקות מהאתר
+NavbarControl() - פעולה האחראית על תוכן סרגל הניווט
+Register() GET - הרשמה לאתר
+Register(user) POST
+RegisterModal() - (הרשמה לאתר(פופאפ</body>
+    </comment>
+    <comment
+      Id="4e859f8d-0c0c-4330-b848-4714afc3496b">
+      <body>מחלקה המייצגת את בקר המידע
+
+GoogleGlass() - הפעולה האחראית דף משקפי גוגל
+HoloLens() - "הפעולה האחראית על דף "הולולנס
+InfoController() - קונסטרקטור
+Metaio() - "הפעולה האחראית על דף "מטאיו</body>
+    </comment>
+    <comment
+      Id="96ed5afa-f05d-40eb-b5fe-031c84c7670d">
+      <body>מחלקה המייצגת את בקר המחלקות
+
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+Create() GET - פעולה האחראית ליצירת מחלקה
+Create(item) POST
+Delete(id) GET - פעולה האחראית למחיקת מחלקה
+DeleteConfirmed(id) POST
+DepartmentsController() - קונסטרקטור
+Details(id) GET - פעולה המציגה פרטים לגבי מחלקה מסוימת
+Edit(id) GET - פעולה האחראית לערוך מחלקה
+Edit(item) POST
+Index() - פעולה האחראית להצגת כל המחלקות
+</body>
+    </comment>
+    <comment
+      Id="f470ef84-0e6a-47f8-8a88-23ea7fe5e54f">
+      <body>מחלקה המייצגת את בקר המנהל
+
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+AdminController() - קונסטרקטור
+Create() GET - יצירת משתמש
+Create(user) POST
+Delete(id) GET - מחיקת משתמש
+DeleteConfirmed(id) POST
+Details(id) - הצגת פרטים לגבי משתמש ספציפי
+Edit(id) GET - עריכת משתמש ספציפי
+Edit(user) POST
+Index() - הצגת כל המשתמשים באתר</body>
+    </comment>
+    <comment
+      Id="8d7af4eb-602e-4a63-bebe-2390e026be49">
+      <body>מחלקה המייצגת את בקר הבית
+
+bankDB - אחראי על בסיס הנתונים
+________________________________________
+
+About() - "הפעולה האחראית על דף "אודות
+Contact() - "הפעולה האחראית על דף "צוק קשר
+Error(errorMessage) - הפעולה האחראית על דפי הארור
+HomeController() - קונסטרקטור
+Index() - הפעולה האחראית על דף הבית</body>
+    </comment>
+    <comment
+      Id="83cf7e5d-3c7b-43a1-b1f1-564c6b3c4cfd">
+      <body>מחלקה המייצגת את בקר המנהל
+
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+AdminController() - קונסטרקטור
+Create() GET - יצירת משתמש
+Create(user) POST
+Delete(id) GET - מחיקת משתמש
+DeleteConfirmed(id) POST
+Details(id) - הצגת פרטים לגבי משתמש ספציפי
+Edit(id) GET - עריכת משתמש ספציפי
+Edit(user) POST
+Index() - הצגת כל המשתמשים באתר</body>
+    </comment>
+    <comment
+      Id="ebc86bb0-9951-4cfa-8e31-52fcb2fb9b40">
+      <body>מחלקה המייצגת את בקר המשתמש
+
+bank - משתנה הווב סרביס
+db - משתנה האחראי על בסיס הנתונים
+___________________________________
+
+AccountController() - קונסטרקטור
+Edit() GET - עריכת משתמש
+Edit(user) POST
+Login() GET - התחברות לאתר
+Login(loginUser) POST
+Logout() - התנתקות מהאתר
+NavbarControl() - פעולה האחראית על תוכן סרגל הניווט
+Register() GET - הרשמה לאתר
+Register(user) POST
+RegisterModal() - (הרשמה לאתר(פופאפ</body>
+    </comment>
+    <comment
+      Id="2d294846-402a-489c-aa65-b89d26779074">
+      <body>מחלקה המייצגת את הווב סרביס
+
+bankDB - אחראי על בסיס הנתונים
+___________________________________
+
+Bank1() - קונסטרקטור
+CashInAccount(id) - מבצע בדיקה כמה כסף יש למשתמש
+ChargeAccount(id, CashToCharge) - מבצע חיוב למשתמש
+CreateBankAccount(id) - יוצר חשבון למשתמש
+hasBankAccount(id) - בדיקה האם קיים חשבון למשתמש</body>
+    </comment>
+    <comment
+      Id="2662344a-860c-4662-a644-15808ef353e4">
+      <body>מחלקה המייצגת את בקר מנהל חשבון הבנק
+
+bankDB - אחראי על בסיס הנתונים
+_______________________________________
+
+BankManagerController() - קונסטרקטור
+Delete(id) GET - מחיקת חשבון
+DeleteConfirmed(id) POST
+Details(id) - פרטים על חשבון מסוים
+GiveCash(id) - נתינת סכום כסף לחשבון
+Index() - הצגת כל חשבוני הבנק</body>
+    </comment>
+    <comment
+      Id="2d56f1de-fa41-43f8-891e-22a605af2f5f">
+      <body>מחלקה המייצגת את חשבון הבנק
+
+bankDB - אחראי על בסיס הנתונים
+_______________________________________
+
+BankAccountController() - קונסטרקטור
+Create() - יצירת חשבון בנק
+Details() - פרטים על חשבון הבנק
+Index() - דף בית החשבון
+Withdrawal() GET - ביצוע משיכה
+Withdrawal(model) POST</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="0ab53449-3387-4278-9f4d-9659d5d625cd">
+      <profileInstance
+        Id="faefa3c3-64f8-463c-b855-42244d232daf"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bbe5f85f-1081-4b41-a3c5-0b1e71361fbf"
+        LastKnownName="Site"
+        LastKnownLocation="Package_1204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c2379f81-7f8c-4abb-ac00-5eafb8637798"
+        LastKnownName="System"
+        LastKnownLocation="Package2_1204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="79ff4d8f-f6bf-45e9-a5b8-bd9b9c75ced3"
+        LastKnownName="BrandesBank"
+        LastKnownLocation="Package_1456.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

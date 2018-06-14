@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BrandesBank</RootNamespace>
-    <AssemblyName>BrandesBank</AssemblyName>
+    <RootNamespace>DabisBank</RootNamespace>
+    <AssemblyName>DabisBank</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -139,6 +139,26 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\MorBank.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MorBank.edmx</DependentUpon>
+      <LastGenOutput>MorBank.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MorBank.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MorBank.edmx</DependentUpon>
+      <LastGenOutput>MorBank.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MorSite.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MorSite.edmx</DependentUpon>
+      <LastGenOutput>MorSite.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MorSite.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MorSite.edmx</DependentUpon>
+      <LastGenOutput>MorSite.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\grayscale.js" />
@@ -176,22 +196,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <EntityDeploy Include="Models\BankDB.edmx">
+    <EntityDeploy Include="Models\MorSite.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BankDB.Designer.cs</LastGenOutput>
+      <LastGenOutput>MorSite.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\BankDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BankDB.edmx</DependentUpon>
-      <LastGenOutput>BankDB.Context.cs</LastGenOutput>
+    <Content Include="Models\MorSite.edmx.diagram">
+      <DependentUpon>MorSite.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\BankDB.edmx.diagram">
-      <DependentUpon>BankDB.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\BankDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BankDB.edmx</DependentUpon>
-      <LastGenOutput>BankDB.cs</LastGenOutput>
+    <EntityDeploy Include="Models\MorBank.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MorBank.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MorBank.edmx.diagram">
+      <DependentUpon>MorBank.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\dabisbank - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dabisbank - Web Deploy.pubxml" />
@@ -202,23 +219,6 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Service References\CreditsService\BrandesBank.CreditsService.isValidResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\SiteDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SiteDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\SiteDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SiteDB.edmx</DependentUpon>
-      <LastGenOutput>SiteDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\SiteDB.edmx.diagram">
-      <DependentUpon>SiteDB.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\SiteDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SiteDB.edmx</DependentUpon>
-      <LastGenOutput>SiteDB.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Service References\CreditsService\Credits.disco" />
@@ -234,11 +234,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\errorLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Admin\Create.cshtml" />
-    <Content Include="Views\Admin\Delete.cshtml" />
-    <Content Include="Views\Admin\Details.cshtml" />
-    <Content Include="Views\Admin\Edit.cshtml" />
-    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -248,7 +243,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BankAccountController.cs" />
     <Compile Include="Controllers\BankManagerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -256,48 +250,57 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Accounts.cs">
-      <DependentUpon>BankDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BankDB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BankDB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BankDB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BankDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BankDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BankDB.edmx</DependentUpon>
+    <Compile Include="Models\Account.cs">
+      <DependentUpon>MorBank.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomUser.cs" />
     <Compile Include="Models\FormattedError.cs" />
     <Compile Include="Models\LoginVM.cs" />
     <Compile Include="Models\Metadata.cs" />
-    <Compile Include="Models\Roles.cs">
-      <DependentUpon>SiteDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SiteDB.Context.cs">
+    <Compile Include="Models\MorBank.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SiteDB.Context.tt</DependentUpon>
+      <DependentUpon>MorBank.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SiteDB.cs">
+    <Compile Include="Models\MorBank.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SiteDB.tt</DependentUpon>
+      <DependentUpon>MorBank.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\SiteDB.Designer.cs">
+    <Compile Include="Models\MorBank.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SiteDB.edmx</DependentUpon>
+      <DependentUpon>MorBank.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Users.cs">
-      <DependentUpon>SiteDB.tt</DependentUpon>
+    <Compile Include="Models\MorSite.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorSite.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MorSite.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MorSite.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorSite.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>MorSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>MorBank.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>MorBank.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>MorBank.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>MorSite.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\WithdrawalModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

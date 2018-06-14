@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/errorLayout.cshtml";
+}
+
+<div class="img-rounded" style="width:75%; height:10%; background-color:rgba(255, 255, 255, 0.75); ">
+    <center>
+        <h2>@ViewBag.error</h2>
+        @Html.ActionLink("Reurn to Site", "Index", "Shop")
+    </center>
+</div><br />
+
+<div id="containerdiv" class="img-responsive">
+    <img src="~/Content/Images/error.png" class="img-responsive" width="75%" />
+    <map name="returnButton" id="returnButton">
+        <area shape="rect" coords="640, 425, 855, 500" alt="return" href="@Url.Action("Index", "Shop")" />
+    </map>
+</div>
+

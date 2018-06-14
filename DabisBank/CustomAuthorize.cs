@@ -29,7 +29,7 @@ namespace DabisBank
 
     public class BankAuthorize : AuthorizeAttribute
     {
-        private BankDB bank = new BankDB();
+        private MorBankEntities bank = new MorBankEntities();
         protected override void HandleUnauthorizedRequest(AuthorizationContext context)
         {
             Users user = context.HttpContext.Session["User"] as Users;

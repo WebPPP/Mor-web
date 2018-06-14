@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9c1fcddf4b6849688ea47f76d8cdb258" Name="Diagram1">
+        <EntityTypeShape EntityType="mordbModel.C__RefactorLog" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="mordbModel.Item" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mordbModel.OrderItem" Width="1.5" PointX="6.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="mordbModel.OrderLine" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mordbModel.Order" Width="1.5" PointX="9.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="mordbModel.Role" Width="1.5" PointX="5.625" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mordbModel.User" Width="1.5" PointX="7.75" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="mordbModel.FK_OrderItem_Items" ManuallyRouted="false" />
+        <AssociationConnector Association="mordbModel.FK_OrderLine_Items" ManuallyRouted="false" />
+        <AssociationConnector Association="mordbModel.FK_OrderItem_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="mordbModel.FK_OrderLine_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="mordbModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="mordbModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

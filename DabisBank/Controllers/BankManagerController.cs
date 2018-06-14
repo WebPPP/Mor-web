@@ -10,7 +10,7 @@ namespace DabisBank.Controllers
     [AdminAuthorize]
     public class BankManagerController : Controller
     {
-        private BankDB bankDB = new BankDB();
+        private MorBankEntities bankDB = new MorBankEntities();
 
         [Route("Accounts")]
         public ActionResult Index()
@@ -22,14 +22,14 @@ namespace DabisBank.Controllers
         [Route("AccountDetailsM")]
         public ActionResult Details(int id)
         {
-            Accounts bankAccount = bankDB.Accounts.Find(id);
+            Accounts bankAccount =new Accounts(bankDB.Accounts.FirstOrDefault(a => a.UserID == id));
             return View(bankAccount);
         }
 
         [HttpGet]
         public ActionResult GiveCash(int id)
         {
-            Accounts bankAccount = bankDB.Accounts.Find(id);
+            Accounts bankAccount = new Accounts(bankDB.Accounts.FirstOrDefault(a=>a.UserID == id));
             List<SqlParameter> param = new List<SqlParameter>();
             param.Add(new SqlParameter("@id", id));
             param.Add(new SqlParameter("@cash", (bankAccount.TotalCash + 150000)));
@@ -42,15 +42,15 @@ namespace DabisBank.Controllers
         [HttpGet, Route("DeleteAccount")]
         public ActionResult Delete(int id)
         {
-            Accounts bankAccount = bankDB.Accounts.Find(id);
+            Accounts bankAccount = new Accounts(bankDB.Accounts.Find(id));
             return View(bankAccount);
         }
-
+        
         [HttpPost, Route("DeleteAccount")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Accounts bankAccount = bankDB.Accounts.Find(id);
+            Account bankAccount = bankDB.Accounts.Find(id);
 
             try
             {

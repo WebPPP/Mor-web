@@ -1,0 +1,3844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7105d60c-b14d-43fb-8ccb-4e0e0c7ec5f6"
+  name="Controllers"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c2e0af29-e226-4f0c-a41d-6b759350fb44"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBrandesBank.Controllers"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b32b2dae-e498-46fc-a0c9-de5b77d5f147"
+        name="BankManagerController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="36f01997-7e4c-40a0-9294-b1a5e0911e14"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c0e623a2-fe33-461f-9497-4f2a544dc380"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51f21739-35c5-458c-86bc-648b1d775b37">
+                <propertyInstance
+                  Id="deebf4c8-4ebf-4d3d-b23f-2ddc255352d6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8cfdb9f8-4bad-4281-8212-999f94e5a3bb">
+                <propertyInstance
+                  Id="a4b65aad-e047-4b63-b649-16ca0669fd64"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c52783a-46ed-4045-8c88-0df1b418e403">
+                <propertyInstance
+                  Id="9170a141-2222-4cc1-9100-397ec894bd94"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f8e2937-fdb4-4210-b0fe-67abc8422ecd">
+                <propertyInstance
+                  Id="9159ecd3-2b51-4931-a026-eaf50eb37daa"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="027fb2b6-990b-412d-908d-5b42463646ba">
+                <propertyInstance
+                  Id="2c2a3993-7a41-4a72-9cc1-4f4501994c68"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="a22aaa03-8fb6-43e9-9433-5b68fbc26872"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b190124e-25c4-47b8-bfdc-24be50c674a4"
+              LastKnownName="Controller"
+              LastKnownLocation="Package4_1204.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5056c5ed-f0bb-42b4-8977-031ad47ae2d8"
+            name="bankDB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f3f876d7-d6c2-48ff-b480-d7610737f0c0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3DbankDB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b39322b-45e5-475b-8e01-23ca1b5b8116"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="061ec208-fd7c-4209-bf35-7583ccfacf2a">
+                    <propertyInstance
+                      Id="414f59e9-2130-4d95-93e9-2fc41e981629"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20df2e93-cad7-4594-bacb-35f45aa560df">
+                    <propertyInstance
+                      Id="21d01d8e-9744-4efd-80df-37ca7909182e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2b42e7d-e14e-43f6-8163-789466211ddb">
+                    <propertyInstance
+                      Id="36a19e18-8ba7-4a04-854c-05ed56fd27b4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99a39c66-c8d0-4190-8610-4bcd82249dd7">
+                    <propertyInstance
+                      Id="c664c708-46c8-40dc-9828-94db459aa29d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fd7a0d4-02a1-4431-a9c4-fd3948892ca7">
+                    <propertyInstance
+                      Id="84ffefb5-1204-4e26-90ba-9ff48f4553bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8690c928-595e-44ff-bfd1-ad26083021bd"
+                LastKnownName="BankDB"
+                LastKnownLocation="Package2_1456.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f4860b58-ac67-48ce-b58c-cfdda8c48bc0"
+            name="BankManagerController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a9e63de7-86a7-4804-b33e-b638dae18534"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e254249-32ea-460f-b65a-c0987113fc7e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="615186d7-f41f-4294-abda-6e49a8545e8e">
+                    <propertyInstance
+                      Id="bf3a920a-be4a-4b77-a6b3-253a884b4b3b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a96a0ab8-4030-4c43-a7ca-a38ac6b10665">
+                    <propertyInstance
+                      Id="16af4ba2-027f-4dcb-8a38-24ba4d434ff6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5f0495a-937d-492c-9c4a-e32cd1ca5635">
+                    <propertyInstance
+                      Id="195612d7-e223-443f-85a4-d1acb706dc33"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d8d4462-86bc-42f0-9572-757d84f045e2">
+                    <propertyInstance
+                      Id="ccb61734-3e9d-49e2-8b12-c8cc7747cbf7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bb1d37b-e5ad-400a-8041-91254d8e9b4c">
+                    <propertyInstance
+                      Id="8562129b-4ca9-451f-86dd-0e3d40d69b2d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26ecb7d1-9a32-4f56-9875-e9fcd75d5fb5">
+                    <propertyInstance
+                      Id="72fef3b9-cff8-4aff-8e32-6d270a97c256"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="88f5a276-3150-457d-9d1e-ad554a767b1d"
+            name="Index"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="56b93cb1-f0b5-4a54-8e9f-308628845f0c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3DIndex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="73240873-821e-4370-85d2-4c63782168cd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="117a4355-8d76-4377-8464-8f530220485b">
+                    <propertyInstance
+                      Id="562cac66-7389-496e-8c3f-c8b52e3aaab8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa2dfdce-22b7-4b80-91e6-ce64272ea317">
+                    <propertyInstance
+                      Id="7740460e-48d6-41cf-82be-c09d992b991f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35257d42-89e1-41f1-b5f4-f8f74058fe63">
+                    <propertyInstance
+                      Id="9759ba91-b17c-4183-8f24-30316f47ccd8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c868dc89-1542-4acf-a05b-36c3b853992b">
+                    <propertyInstance
+                      Id="b1f2f7e5-35bc-4f78-a60e-b0a3d787f38d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f4b063d-a2ef-4a1b-8198-b6feca40e59d">
+                    <propertyInstance
+                      Id="40fe74a0-96bf-4616-9e73-61a9d9cbb4a4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5a5038d-3d93-487e-8f88-2fc335278b84">
+                    <propertyInstance
+                      Id="ef4a50b8-f725-4b26-b1fd-66cfe7231cf1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a019b81d-3894-43f6-a83f-396807e9ee02"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3507a851-9823-45a3-8424-0ff8a2b8d51e"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="39ec1ba4-2fe7-4083-87f7-2bbd92878896"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c0fb4e17-2b70-4b43-9544-82af37a8e9e9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d29a3bcb-c953-4a5c-8964-f36c29ea8e30">
+                    <propertyInstance
+                      Id="1ef0c032-a681-48a5-bb54-bc80ab239b2c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1451c9f-22e6-4cd5-8a64-d0c1d3e2d979">
+                    <propertyInstance
+                      Id="0d7f42ae-090e-477f-bcd9-bff83f244288"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28e66710-a20a-4f44-95a2-26a0705c14d4">
+                    <propertyInstance
+                      Id="41a1ac7b-e616-4950-b56e-0adac67f1a37"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1d17877-6692-439e-a9dc-de21b5392dd4">
+                    <propertyInstance
+                      Id="86143ebb-0b88-498d-93a3-6a491b363c26"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15501fa9-f26b-45cd-9233-c1806e369482">
+                    <propertyInstance
+                      Id="9fefa31d-cccc-477e-b2f1-cff349f75eab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0a3a393-8add-4900-9821-b05795e25c01">
+                    <propertyInstance
+                      Id="8dbb4f48-e165-47d8-b554-34a774811ecf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f1dac0f1-d0d1-47b7-a388-4514fcb7414a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30245176-e74d-41da-bd70-ce7086bc8b32"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5a69cc0f-0f6a-43fe-bbdf-1cffea8ba02a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ca5535a6-c602-4805-94ca-691220f8a707"
+            name="DeleteConfirmed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4536813c-e540-45a5-92d9-9375c239414a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DDeleteConfirmed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="97953140-0f19-463c-b622-292ba50311c2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a9482cf-9d95-4e73-a1aa-326b1f8394d5">
+                    <propertyInstance
+                      Id="b0c420ee-6762-4371-a8cc-31547f7f1a19"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0e98a1e-415c-4b6b-8c33-f59e67dcf816">
+                    <propertyInstance
+                      Id="cbf707d4-72a3-4648-9a13-16e5eda18f22"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f9bc805-0533-4681-91ff-13d7ab958f1c">
+                    <propertyInstance
+                      Id="10c5d0ae-9931-447f-a982-289cb28d577b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00321337-fb2f-47d4-84bc-0727bb81fc0e">
+                    <propertyInstance
+                      Id="9045cd5a-450c-47c1-bdfb-f502600c3a1a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f7bcd4d-4571-4bdc-abbb-5892b1c3a693">
+                    <propertyInstance
+                      Id="7403b915-0610-47f8-8f02-72d9d86f3e71"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cce82547-0f56-49b4-93ad-3af264de1901">
+                    <propertyInstance
+                      Id="a292659a-f02e-47c4-b2dc-cbb60465df10"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3416941e-aba3-4ab3-a46e-2b790f8c78de"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="211e5aa3-0d2a-4a1e-a199-2b56d6fdd75d"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="41ed2694-1568-4126-8c60-6c2849997a15"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DDeleteConfirmed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7264705f-0c45-4b07-82b4-6f6a1a63be16"
+            name="Details"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d751b339-6a0a-4095-9828-b582c141b6f6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DDetails OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="425fd788-d74d-4c16-9526-6651f22caaed"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="527f1938-e778-4411-ab9c-e0c216373fb4">
+                    <propertyInstance
+                      Id="8456367c-36bb-4c1f-9012-b80280bd67b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a9e0855-761f-442c-b6cc-dc3f892bb576">
+                    <propertyInstance
+                      Id="37550f40-e718-4138-a5be-e66eb9d5ebe8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef08c223-048d-4d65-a08d-a7f57122abe5">
+                    <propertyInstance
+                      Id="a1e326aa-d6f4-4018-9bc4-dea0a8aec8cd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fab7d8b-3fc1-4cbc-acc7-a48d3398beff">
+                    <propertyInstance
+                      Id="c0651fb3-6cde-49aa-9408-c77620e2e7cd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ca95271-e3b9-4dc4-820d-eeffbcfa9b09">
+                    <propertyInstance
+                      Id="7ba3adc0-8138-4daf-acbc-b89d3fe86217"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80382629-9e55-416d-bdf8-9a941a73487a">
+                    <propertyInstance
+                      Id="33218731-e969-4d01-8b7b-6cb3c972fd49"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a01d6e9c-52c9-40fc-ab6e-0a18f12626f6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4a34cf4-dd1d-4c66-9a9f-cd2d374bdd9e"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f23b9966-5dba-4bfb-b501-dfa7364ec5b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DDetails OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="75d20aaa-96ec-4cb8-8406-a8ff95eefe38"
+            name="GiveCash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f720671c-5aa3-4060-b4db-b35a5536885d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DGiveCash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b638c96-6e95-4d72-b237-c18a7f375dc8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df9a7eef-cd59-4aec-b296-598b763aaf92">
+                    <propertyInstance
+                      Id="2e363605-ae36-4cde-899c-ae376245c7a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3f67fcf-7593-4b33-b481-7b89b135d5bd">
+                    <propertyInstance
+                      Id="337ba835-a62d-4f80-908f-879a4019d7c8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0a811aa-3dda-481b-8426-d5f9fafe94dd">
+                    <propertyInstance
+                      Id="7c0fbfd1-ca5f-4c8c-9e91-7900246ed7e2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdfbcd10-0bd8-42bc-af0b-03b104e9dfa4">
+                    <propertyInstance
+                      Id="ffbb3e1a-0372-4411-804e-14dfd4b17a4d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2540da56-f15c-43c2-a6ae-e937813389ba">
+                    <propertyInstance
+                      Id="cddada27-9b4a-40ce-96e3-c21da98ab574"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6307760-fd6a-4149-ac69-63e9b6922840">
+                    <propertyInstance
+                      Id="8333a5d2-6036-4c6c-8545-bb5ef56d6961"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0de279b3-2cfa-475c-b8f9-469555e44927"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8dbe11b7-4b86-4c01-9a7e-2a4bcc91ca9f"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fc57d0d7-dd73-4f4b-8d87-3ec65a34e15c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankManagerController Member%3D(Name%3DGiveCash OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="affd545e-83c4-4643-ac65-73ce66a25558"
+        name="HomeController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="21902e26-2f7b-43b7-b5f0-695d9752ea2c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="18deb83c-40be-4826-864c-4988ece21ba2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="80fa8b7b-f805-4ce8-83cc-840471b37fa0">
+                <propertyInstance
+                  Id="619ff7dc-0130-432d-8c1d-37759772ea9b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b7066df-2ae3-4df3-8a55-6f800be1fe24">
+                <propertyInstance
+                  Id="88a3f777-5c5f-4e98-bfc3-90ff05a63a81"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="395f6b54-ec6a-4908-a702-e0a523aedd0b">
+                <propertyInstance
+                  Id="bd82189c-6996-488d-b9a6-5caf33b6da06"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e098bc89-d909-44c3-8d51-55624a98c814">
+                <propertyInstance
+                  Id="2caa908a-87ef-45b7-ade9-f4ebfc966f55"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01bdb29f-8943-4eb8-a14b-26d094d75476">
+                <propertyInstance
+                  Id="cb0f4f02-f93e-438b-a201-8ccb272c11a2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="43ce691f-8b0a-4f62-be03-de6782c0654b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b190124e-25c4-47b8-bfdc-24be50c674a4"
+              LastKnownName="Controller"
+              LastKnownLocation="Package4_1204.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="558d2345-3062-4680-ac65-226609a14f38"
+            name="bankDB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f7d86775-1c61-4d27-90b4-74f3c15e8302"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3DbankDB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4730900b-d724-47b6-81b1-0dd24e065741"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61cb544b-81db-41b5-beb3-7115222239e7">
+                    <propertyInstance
+                      Id="21570820-cf37-4a25-a867-35545ed16ace"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef64818f-dd6c-4127-829c-66153654d976">
+                    <propertyInstance
+                      Id="a680df3e-9574-4fa4-8c53-68a1b73eeef1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5deace0-8a2a-4a1d-b999-804ee18e554d">
+                    <propertyInstance
+                      Id="139ee4f0-ff9f-422d-a269-354d2b4afa5c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8583bc24-8ed2-4147-a650-cbaa8c990209">
+                    <propertyInstance
+                      Id="e046cbd0-4a5e-401e-b95e-3a905d05c591"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34146cd7-e319-487f-b655-440727d62ef9">
+                    <propertyInstance
+                      Id="8d7e0f6e-a9ec-4574-af3f-23a3611d4047"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8690c928-595e-44ff-bfd1-ad26083021bd"
+                LastKnownName="BankDB"
+                LastKnownLocation="Package2_1456.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="763c0ee7-2bbe-4cb4-a1bd-da964d61d329"
+            name="HomeController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a4eac807-61d6-4b93-83d3-a6a0a739d8cf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23cb9377-e32c-4a4c-95e2-50afba07cb1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f0e6da4-c0b3-4ab4-a81d-96f04092a8a2">
+                    <propertyInstance
+                      Id="76d3eca3-eef9-48b3-adcf-536bf5f516a1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee55d3f2-8d10-44b5-b3b9-b6bc95bc70ab">
+                    <propertyInstance
+                      Id="58703cdf-fdda-4bb8-bf50-f000dc805f83"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67370d95-21c1-413a-81f2-713f88f38422">
+                    <propertyInstance
+                      Id="d1bd444c-bb5f-4e33-82b2-a1c492b40e60"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a7c6800-f9d4-4432-b5e9-92759c6c0176">
+                    <propertyInstance
+                      Id="ce5c5047-41ae-4939-9458-85a40880a34d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c82741bf-8375-4c28-ae59-3cd1dee71807">
+                    <propertyInstance
+                      Id="a25f83fe-e931-4125-b506-b93fd46cb725"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e7a83d5-1ce9-462e-b9e6-6e17e7b09a6a">
+                    <propertyInstance
+                      Id="bac1cf27-bebb-43e0-afb4-34a4a37a1923"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6ecd43e5-9648-4239-845e-c15aa3996dc0"
+            name="Index"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a07d3a3d-3232-43c3-b984-456f8bf29da5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3DIndex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e9f69eef-016a-4569-a18f-cad84725c67a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55a5b6b8-70d1-4f43-9627-81e7a8a861b5">
+                    <propertyInstance
+                      Id="874cf05c-8934-4160-9c1a-5356010f227a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="109f9689-5239-4b63-bf68-97eaada0914e">
+                    <propertyInstance
+                      Id="1d178065-ca57-4b51-bec8-6d78e0091b44"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd6fd0dd-e2c1-4913-8375-5f29bf739ecc">
+                    <propertyInstance
+                      Id="9f8f527f-e473-428c-8d07-c8683dc5fd9e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59e8d15c-7206-4206-b19a-8cbc4e8a22ce">
+                    <propertyInstance
+                      Id="aec1eadf-dc51-499e-870e-e9a24c0ca4bd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af42f926-47e0-4477-b5b5-b7a59c7401c5">
+                    <propertyInstance
+                      Id="cc0add93-c2ce-420d-a8f6-60440068b0aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cee4049-9351-4e76-baeb-a36f83649354">
+                    <propertyInstance
+                      Id="a95f0b91-faf5-4b5b-a3f9-fc42c17a40d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc696def-bf7a-44fb-a076-8d81dc96c0b7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="52ad19d2-d472-48df-8905-9d22896de7c7"
+            name="Error"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0b2bfb19-df6b-460d-80e1-cbda0753eea2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3D(Name%3DError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="506c81ab-2c74-484a-bb3c-2712a6cdaffb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9fcd4fd-5184-43b6-90ad-efea8ac66984">
+                    <propertyInstance
+                      Id="f3e483e3-5d8d-4b8c-b828-18ac00e1f308"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a23179f-9773-48a6-8d8f-4d89c20764b6">
+                    <propertyInstance
+                      Id="c7898439-0c36-4351-a03e-3aaa5f82a4b6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4752cc8-9f86-4df5-a1c5-77e97392aeaf">
+                    <propertyInstance
+                      Id="8c968873-bbeb-458f-ba93-93b5e1342b87"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="771da54b-410c-46d2-98eb-7876a099d5f7">
+                    <propertyInstance
+                      Id="6ce4e3e8-c63c-4763-bc0e-c467e6960edd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="848b91ed-9a05-4c2c-a158-aca9c301074c">
+                    <propertyInstance
+                      Id="fee0e14a-d67b-4039-99e0-c45ff37f4bf0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b400a2f-6cf4-4d3b-a619-1dfe0bd5714e">
+                    <propertyInstance
+                      Id="ae3c9e81-0c6a-4c2c-8872-ed376bbb5fae"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f69939d-10a4-41c6-aca7-d32b2d796e8d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e023d8c9-fa17-45cc-a2c7-de55e61c9c30"
+                  name="errorMessage"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="018a47a2-1a4b-4754-9a87-c3f62e83f2a9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3D(Name%3DError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DerrorMessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="aa4d8b68-8ba0-4be1-a5cb-9b4ed6aac41f"
+            name="About"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2e49c01b-9174-4bc7-ad85-9ac38efe2a99"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3DAbout"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b07f3ed-720c-4386-ba8f-b7bbbcb478fe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e3457f6-398f-48a7-865a-3814d5051376">
+                    <propertyInstance
+                      Id="9fc559da-6513-4f9b-ba9f-70bf5f7a5d0d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="495301dd-fd92-4cca-909c-027f60b3c43b">
+                    <propertyInstance
+                      Id="d62dbe71-190b-444f-b5c0-fc616fb35bed"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cdc5ef3-4368-427f-8b75-6c75931f922e">
+                    <propertyInstance
+                      Id="fd3a6e28-14b7-411c-b178-c2c75cb351ad"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e19822b-a57c-433c-aff4-16ce78326133">
+                    <propertyInstance
+                      Id="c2aaf4cd-efc3-4b14-b1eb-72f429bd186a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0233c16f-94e1-4aae-b1c5-c8a0bf1ca2f5">
+                    <propertyInstance
+                      Id="4d5c875e-255c-4093-8159-cbd6410a454e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be76241b-d46c-4316-b0a8-fa7ed5262913">
+                    <propertyInstance
+                      Id="aee8a611-f408-4dc9-9657-1850f986f074"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61d8edbb-2e21-4512-a575-836cea1e2bef"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="691b8c8a-3b49-4418-8095-0f5e1e805f84"
+            name="Contact"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aa2ad318-5095-4304-bca2-6091c8e6b1c6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DHomeController Member%3DContact"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0c8b57f-8195-4032-b9a0-00fbe597ecd3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fb058e9-ae2a-4dad-a748-817e9586e5b4">
+                    <propertyInstance
+                      Id="2beaf390-da18-471b-87ad-c4c4f6cc6086"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3af9bd10-debb-4f6e-976f-2a2bfe20086d">
+                    <propertyInstance
+                      Id="868c3245-5dba-4ca7-a168-aba4331b881c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abb5f236-01ea-4561-b50f-74206dee90be">
+                    <propertyInstance
+                      Id="4701f700-e331-4f1b-a9e2-77f031dcb11d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d8a6af9-6333-4d9c-8902-5f393bde0e4c">
+                    <propertyInstance
+                      Id="c7862184-590c-4a52-a922-ec7deb506e26"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6fc6869-0f5c-4d19-aba5-5215a86a0672">
+                    <propertyInstance
+                      Id="b0d054c5-01e4-470a-bc4e-5755ad1e18ad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1b9f329-dbc5-49ec-896a-76b906812627">
+                    <propertyInstance
+                      Id="1980b603-c206-4906-abb6-a0b1e10bb86b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="95083e9d-39be-4c8f-bd60-f705e8b055b1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="36bc3d24-8788-414c-a7ba-bce9634fcc32"
+        name="AccountController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f1b6d936-a107-446b-bc7f-92ae298d9ba5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5cd6730c-f59b-4a68-9efb-3105cc352d1e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad701ade-ff8d-4220-9c6d-596b815281a5">
+                <propertyInstance
+                  Id="eef78762-c34f-45f7-b234-6b9ead1252fa"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eecec76c-b9cd-4f66-971f-c80b74583727">
+                <propertyInstance
+                  Id="8bc713ac-5bff-4699-96c2-8df883382f7e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6db564a2-1b18-4404-afe4-b0e426855f45">
+                <propertyInstance
+                  Id="efbea9c3-f7c5-45fe-ac35-6e68e54d7ea2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="381649e8-8f63-4fa6-878d-e8c6bbe35744">
+                <propertyInstance
+                  Id="6e4bb908-1807-47f4-88bf-48b84bd6eccf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b21278c9-fcda-432b-ac8a-70af01d73ead">
+                <propertyInstance
+                  Id="c91d62ba-93f2-46bc-bbb2-a8cb13bca10f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e5bd1482-e911-40d0-abef-6a2d54e72373"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b190124e-25c4-47b8-bfdc-24be50c674a4"
+              LastKnownName="Controller"
+              LastKnownLocation="Package4_1204.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a92a1b40-bc4c-44ae-931c-f82db0c7e54e"
+            name="bankDB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a9b10c55-f52b-4919-ba3d-b9d747ec1ab8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3DbankDB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a881c059-1378-494f-bd41-4dc9d956ca4a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d9d430c-ba95-42a1-b5df-52fdf52ee7a4">
+                    <propertyInstance
+                      Id="f00cf2ba-4651-4855-b7c6-f6da993adc5b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ef3a3d3-636e-43b8-a457-85d225740d0a">
+                    <propertyInstance
+                      Id="d61e5273-b222-4a54-9a04-5f3426ef0b09"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ed0879a-d588-43f7-85e4-a6083244e11c">
+                    <propertyInstance
+                      Id="ae06d3b1-3169-40cf-a98c-30e3baf4ccc1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7df85607-d34a-47c5-9eab-eec08186238b">
+                    <propertyInstance
+                      Id="c9404233-3286-4fdc-957f-f5f6577c0071"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61e36317-3f72-4e02-84c2-5af3aa8ccc14">
+                    <propertyInstance
+                      Id="10bcfbea-687e-4c52-ba67-a3279fa5f47a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8690c928-595e-44ff-bfd1-ad26083021bd"
+                LastKnownName="BankDB"
+                LastKnownLocation="Package2_1456.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1598982f-1016-4be3-8e94-b138520dbe8f"
+            name="db"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d8ed2f62-d1d7-40de-b9bc-e52f86ef00ff"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3Ddb"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7c30fea6-901c-4764-8cfe-17d595e9451d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73cd5f57-bbe4-4b1d-919b-46549e1ced97">
+                    <propertyInstance
+                      Id="793d0b30-d4d5-4ba5-82a5-b2e4520024b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4553f59-7dbe-40ed-9490-4863811a030f">
+                    <propertyInstance
+                      Id="e71d6842-b9f6-4def-9bdf-68461e8db560"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d9b636e-82ff-4563-a4bd-8006fa6aae8e">
+                    <propertyInstance
+                      Id="f9b46d6f-74c1-4efb-b799-ddf10314f04a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a24248b-7264-4efb-9397-3251c0e853d8">
+                    <propertyInstance
+                      Id="da908237-c824-4405-9976-da1cff491388"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4d4d800-878c-4d05-814e-15b6677b5683">
+                    <propertyInstance
+                      Id="fe62f3f7-2445-4130-be2b-8ec7d6c972f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="12cb4007-9747-4172-b705-8db220ca7fd4"
+                LastKnownName="sitedbEntities"
+                LastKnownLocation="Package2_1456.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7e079fe1-7385-4f03-b6f3-4a1f0a45fb89"
+            name="AccountController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="80388cf5-19b4-4a5d-92c3-dd4f89f816cc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d3aba2c2-3a5a-48b2-872c-fa40ebc7d256"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82d13b16-4344-4262-94bf-9360888f76dd">
+                    <propertyInstance
+                      Id="a465c05f-1fe7-423e-b235-3eb57b4c6167"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8f28cbf-60eb-4527-a796-36d82e3b8b94">
+                    <propertyInstance
+                      Id="1e4fc5fb-d62c-438a-989e-ec9cbe96e539"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08173504-59cd-424f-861c-3887cc13e833">
+                    <propertyInstance
+                      Id="95ec02b9-8527-4fe9-9e53-b0a177fc431e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89df6a11-955a-43cb-9ff6-fd53a43cf6ae">
+                    <propertyInstance
+                      Id="1e0cc4fb-b041-4215-ae03-a23f6ac00150"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00092b50-5475-4b6d-9148-4ac90a18cd17">
+                    <propertyInstance
+                      Id="1ced9f67-1e26-416f-bd01-9dbd8e58a15d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b2935aa-2ad7-4f37-9bfd-0527cd9c0ca4">
+                    <propertyInstance
+                      Id="d083dd32-b88b-4a34-94e1-50ca8218a811"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="cedbdcae-46d5-4dba-8cef-1f328003a7a2"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5ff14050-7f27-450b-a84f-20e09bb47b4f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0d8ef50b-03da-4917-b280-a24c7d0fc652"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c009778e-6d24-4956-b8e5-3ceea767a5a5">
+                    <propertyInstance
+                      Id="48bdd121-5b01-45ae-9669-a848dffb2e0b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7021cd8e-57e1-4d9a-8e41-d7afebad9393">
+                    <propertyInstance
+                      Id="55875dfd-0f19-4987-baf1-dc7d7ee38841"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7117cdc3-d8ba-43af-971f-fb48e92e9aa9">
+                    <propertyInstance
+                      Id="49658426-d9e8-4bc7-9eb5-00c9183045c0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d5ed5cb-953a-4aaa-bc6d-2785dbe3a931">
+                    <propertyInstance
+                      Id="6371b2d0-fc43-4adb-8246-4ecaaaf320a8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e92522a-fb48-46f2-acf3-a64c06967764">
+                    <propertyInstance
+                      Id="6ffdfe2f-b440-4c6c-9919-d0c0bcca6076"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e32b159e-9a4a-4273-bf72-d4203241f8dc">
+                    <propertyInstance
+                      Id="4b5367ff-9b5b-45e7-b7d5-d6c062a15724"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73a98984-0a71-42f5-a6a1-e3242f3d3f73"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0dec2862-05a7-418f-aef8-f3d0a9830e27"
+                  name="editedUser"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7f2cfe14-1863-4634-83f9-8c76982eb883"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)]) ParameterIdentifier%3DeditedUser"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="439072a8-ee18-43ad-88e9-b7757ec12e11"
+                      LastKnownName="Users"
+                      LastKnownLocation="Package2_1456.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2f69a8b0-9455-404f-9086-a7138ac45803"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ca140f01-9d62-459f-a0e4-65dc302aa6bf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DLoginVM)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0a5f265a-2d9c-4d21-8bcf-d5d947e687be"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb0f5563-21fe-4638-831e-f5f82bd69c43">
+                    <propertyInstance
+                      Id="5958e7cd-8ffc-4c4a-8ebf-cf30c32b3a36"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c76f51c-c7a3-4835-8185-4bb04a1c8d7a">
+                    <propertyInstance
+                      Id="3fb99c85-e273-444f-9454-1091ef0aa4d9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff5d2cc3-7ae9-458c-aa16-cfd4b005c493">
+                    <propertyInstance
+                      Id="a9a7ecfd-09ad-4be8-82d6-cc5c9c078f94"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b1af135-19c6-4e74-821b-f38c34b0d778">
+                    <propertyInstance
+                      Id="4de4da94-8f3b-4560-bcf2-70e578d57fc4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4d08c31-991d-4437-8863-00226acebd3b">
+                    <propertyInstance
+                      Id="b403a44b-27ca-43bd-a2b8-bba22acbf634"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="703726de-7e0c-4a99-85d0-45eb7c4fb67e">
+                    <propertyInstance
+                      Id="edbc58ec-f272-4a8a-ab5c-99321376be07"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b4f5acb-cd52-47a3-a35a-069e1875c013"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d3a248b-442b-423e-8bb6-985dd052350b"
+                  name="loginUser"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5b7da805-2375-4776-895c-2f9876bccb85"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DLoginVM)]) ParameterIdentifier%3DloginUser"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3d887b5a-3d0a-4ba0-8e23-4ec85c8fc94a"
+                      LastKnownName="LoginVM"
+                      LastKnownLocation="Package2_1456.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a97fdb21-4109-4be2-a590-a3864a5bec03"
+            name="Register"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fb6b9453-43eb-4102-af9a-6a3bbf0d9de3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D(Name%3DRegister OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="16c90b91-3c02-4c02-b82d-567310f6d3a0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5dceb19d-12a4-40be-8b2b-da273ca329df">
+                    <propertyInstance
+                      Id="01de30a3-27bd-4c4e-aa06-20961ee5f756"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7e1b316-ef62-4002-a79c-90ef04452b7c">
+                    <propertyInstance
+                      Id="5010d09c-9f8b-4c4d-8cd7-cffb1ef33a1f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1075b229-76a9-49e7-a11d-fee4f4fe0369">
+                    <propertyInstance
+                      Id="f4090aa7-627f-426b-9114-422fd2ccb1bd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d23b567-d45c-4d9c-84f0-4b6d229043ec">
+                    <propertyInstance
+                      Id="6efc1b91-0b0f-40cb-9bcd-2af60649ab4d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b61ec3a3-9a26-4d1d-b413-8b4c16b20f4d">
+                    <propertyInstance
+                      Id="36b3d779-ffc1-4e7b-82b1-603b57a98ece"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3cbec04-14d7-4b76-8e95-73a64afb2ec5">
+                    <propertyInstance
+                      Id="21b23428-8fb1-46fc-a7ea-986cec17c506"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="85876219-4def-4d97-8a00-f95586d142b5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d26295c-0f18-4d79-9c02-2f89f5af0135"
+                  name="user"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5f8a42a0-3d8b-4a66-bb99-125dcb2b3876"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3D(Name%3DRegister OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)]) ParameterIdentifier%3Duser"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="439072a8-ee18-43ad-88e9-b7757ec12e11"
+                      LastKnownName="Users"
+                      LastKnownLocation="Package2_1456.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f5f1337-8fbd-42b5-b95e-495f11876add"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21f756c1-ccdc-4b92-867b-da38f5940f4b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3DEdit"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3436c021-45d6-427f-88c8-8ec9ac87e084"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a093462-ef1d-4263-b845-99890fc4bd5e">
+                    <propertyInstance
+                      Id="ce723038-92be-41a2-a7ef-4b100702ae64"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a598c049-32bd-474a-ab04-3d4f5f2a6c38">
+                    <propertyInstance
+                      Id="e61e7ce2-d21d-40cd-aa87-a9463357f586"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03e0cd1e-1751-4148-9e6a-c2a266f507f4">
+                    <propertyInstance
+                      Id="3e1bac22-a7fb-4df0-9ded-05390340648a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="226bc0d6-1c6f-4165-b751-7d6773028ba5">
+                    <propertyInstance
+                      Id="246413ce-c31a-4212-bd1f-0c6a339f6e4e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09c96341-9ccf-4b5f-8742-a38e1c6a35f2">
+                    <propertyInstance
+                      Id="111c84e0-a475-4706-98a2-8b43888a5555"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="511f2b23-517c-4638-82da-a8ad1c0b6855">
+                    <propertyInstance
+                      Id="7932f5ba-4fdc-4c86-82f8-30e21f2cbee7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c76d3fb-2d45-4e13-a737-b7dd68d413fd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="db6fd157-754a-4d81-8ab9-dfd708b2b793"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cb1324d2-9483-4482-9478-109dab156666"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3DLogin"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ffacb3d0-5871-4716-be02-c5bea3541ebf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f4e736f-30c1-4009-bead-d45619ac16be">
+                    <propertyInstance
+                      Id="22fd0e30-aa3f-46df-9448-da17aab578ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ed8ebd1-0990-4f4a-960c-9b9910566b41">
+                    <propertyInstance
+                      Id="55c89c0a-83e1-4e6b-bfef-4abf9edc57ee"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="729f4be6-af4f-4b4e-bd0d-940f01649f8a">
+                    <propertyInstance
+                      Id="8a30ee75-0ea3-4349-a037-082705705d09"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6f203ec-67a7-4588-87b4-1429ed147bde">
+                    <propertyInstance
+                      Id="3f801a69-25fc-4d66-a739-8d4abecb2703"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6227677-d7c7-40a2-bc53-03f8cec66158">
+                    <propertyInstance
+                      Id="e3453db6-acf6-445e-b70c-72b8b0ecbfaf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b44247d-078b-4f3a-a06c-0a9bcf2f8f80">
+                    <propertyInstance
+                      Id="23052411-d9fa-481c-b220-6f0a249e896f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38b009a5-cd8c-4091-a241-145db6169a09"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ded011f2-0230-40c8-9744-8a3d229a311f"
+            name="Logout"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="95765fa0-9352-4ab9-8269-bea9dc9bdd3d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3DLogout"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="51e8b70a-64c8-4486-ae31-9615a59b5ed8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21e3af0e-9cec-4cac-9d58-5ece65df5099">
+                    <propertyInstance
+                      Id="12fbcef6-46ab-488a-8e53-bb66384a0b02"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed2a61ad-da9b-4008-a321-062090e2920d">
+                    <propertyInstance
+                      Id="74fb5341-967f-46b0-a6b5-a772631b16d3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ea1f34b-55b3-40fc-aa16-78f43cbbccc3">
+                    <propertyInstance
+                      Id="eade4158-a063-44b2-b094-8af331dcaa51"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27190189-e910-4a29-b86c-b8ede1b52698">
+                    <propertyInstance
+                      Id="802b5698-0d65-4eb0-8199-091d23be87bb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71dc8adc-6fd0-4d19-83b8-289b7ca3f126">
+                    <propertyInstance
+                      Id="8d1e10d4-7788-4fad-a7ec-894baabc80c3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20bd2f05-aeeb-4a61-96cd-e4fb9d59be0e">
+                    <propertyInstance
+                      Id="8ac1dc16-3682-408d-bf74-f5483b4317d1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dbf28164-5e31-4528-9b4c-c93ec20357e9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="82f23a57-eb6c-4c9e-87d8-0f5414246161"
+            name="Register"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="abb8584f-ce53-430f-85c5-cc3f5d550bf9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3DRegister"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11822de6-affe-4016-9302-45ba703d940c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1de4b230-cf59-49c5-93f2-e18ba4a3a523">
+                    <propertyInstance
+                      Id="e30a6d4e-5141-4e0e-b537-931e144248c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb7a8b81-5910-4d75-9855-5566daf5af79">
+                    <propertyInstance
+                      Id="85ca9bbe-4968-4645-a8a6-956e0958a323"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65c4608e-a2c9-46b7-9c24-fb66183e9329">
+                    <propertyInstance
+                      Id="bd51c656-c172-412c-b274-5b770ec50d90"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="133aecc9-e941-44b1-b4b3-eb0fea3b2b88">
+                    <propertyInstance
+                      Id="f95e0402-a6f5-4084-8920-fea659585806"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="161a89c4-7c72-4029-b808-eb935964e73d">
+                    <propertyInstance
+                      Id="18732e62-ac92-4479-ba2b-3ab643a3ce33"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a00fc691-a725-4207-88d4-7c00e5f57566">
+                    <propertyInstance
+                      Id="4400aa5d-0296-41d9-bcc9-775b7a57c288"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b8c3826d-4a8e-4b8c-b1ce-a81e94a235ce"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="76dffc7e-942b-4233-95bf-4e8755fd899e"
+            name="RegisterModal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="931b7fb5-6dc6-4273-b97f-9267aeaa2482"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAccountController Member%3DRegisterModal"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58fff785-0107-4221-a405-2a21dcb09f09"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe6f4235-6634-4543-b64e-a53230fb9d88">
+                    <propertyInstance
+                      Id="519db599-d20d-4bcb-a090-c16f22e47c10"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce6a7eaa-bb26-465a-ad0e-5d0c6dfa1bb7">
+                    <propertyInstance
+                      Id="e68fa6bf-2385-4df3-b3bb-847357d96928"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46c38831-004b-450b-ba7a-9f7b994d08d6">
+                    <propertyInstance
+                      Id="d0651ff2-30e3-4616-a1c6-a1432d907149"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a2bbf82-708c-4bad-b55b-b8dd6daa4267">
+                    <propertyInstance
+                      Id="6a557dda-e2e4-431d-811c-35255e66f510"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1a59781-0207-4ccb-8290-31f950078954">
+                    <propertyInstance
+                      Id="0e5bb447-2ca8-4a84-b8f8-da656c224c60"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c401483-7fcd-4ccb-9bee-0ee03883fe30">
+                    <propertyInstance
+                      Id="24f5209b-c580-494b-938d-4fbcf2aa8411"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f7593e9-c5a9-42ee-ae87-4675255ff9ad"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce760ba2-02d5-4c57-bc1f-b7b8d2698ba0"
+        name="AdminController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b3f9ca79-6c4f-4b8a-a720-6fd3b96c021b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0fb0ecfc-0fed-490c-8bab-86b492f76980"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22b2fbe1-2923-47e3-86d0-ef74eec3cc3d">
+                <propertyInstance
+                  Id="7edc9254-0857-4653-a16c-ccf9e780088a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="74c988ea-8682-4b61-b52d-e427286cc0d7">
+                <propertyInstance
+                  Id="6142548d-ae2b-410e-97b7-25fe13173244"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0ffbb19-c46a-4dc3-bf96-2800387d3e30">
+                <propertyInstance
+                  Id="7210e9db-141e-4dc1-a789-06444a55f9af"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="646004bc-308d-4980-b717-7b56928e484e">
+                <propertyInstance
+                  Id="b4f966e5-9249-40c6-a572-09a37f5e8179"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9dd1a1b-5e66-464b-a8d3-adb6fa9bbfaf">
+                <propertyInstance
+                  Id="fd025fa7-bb3e-4762-a3ed-f1a69ed0db0c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="5df725ed-68cd-4878-8ee9-a1522974c499"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b190124e-25c4-47b8-bfdc-24be50c674a4"
+              LastKnownName="Controller"
+              LastKnownLocation="Package4_1204.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c05794aa-b828-4d85-9956-8e3d305cdcae"
+            name="db"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd21de46-4767-4158-8f5e-b726ffee6f83"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3Ddb"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="04baae68-c881-4921-b942-5224af3f03ac"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c805f409-32da-43f0-a020-b672c0ad30b1">
+                    <propertyInstance
+                      Id="e38b52ed-475e-4489-8d3d-6f7e5cd7a570"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52c7ac8c-4b9c-4750-b3c2-adaba05a823f">
+                    <propertyInstance
+                      Id="0228d8f3-923a-49dd-94b0-1d751d344316"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b860a74f-be24-4514-a377-10342ddc0e2a">
+                    <propertyInstance
+                      Id="6f3c5de4-b98a-491c-89ca-e3b08a4f2792"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a1a941a-0403-4816-b16f-ac71848aca45">
+                    <propertyInstance
+                      Id="b60d5f8c-fd28-40c3-8694-998b32be4839"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="308a5200-48c6-4035-b2a6-e467b966f87f">
+                    <propertyInstance
+                      Id="502daa61-6baa-4f5b-b441-055f1cfa3f0f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="12cb4007-9747-4172-b705-8db220ca7fd4"
+                LastKnownName="sitedbEntities"
+                LastKnownLocation="Package2_1456.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="092dc740-544e-49f3-ad8e-92cb0ec8e799"
+            name="AdminController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dafb545a-938b-4d9f-a635-b9b048e58e7e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bf08916b-8070-4a3d-949e-eb41f93c697a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f870ee42-b821-494f-b8f3-6c18b6ab4299">
+                    <propertyInstance
+                      Id="7743a247-3344-40c4-8d25-bd8e55d51c73"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2c26016-ecd2-4219-b5a6-b75f0e733000">
+                    <propertyInstance
+                      Id="9e4c940b-9b07-4683-a8a4-3b68672b6552"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63942622-cff7-4ea7-abb3-c25137f85fb9">
+                    <propertyInstance
+                      Id="38045916-e849-4e0f-baee-705c76f505cc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efdeb279-6c65-4735-aa04-8cfa259e34de">
+                    <propertyInstance
+                      Id="e8b92a3c-9cfc-4aef-b3bb-50f8ba9a4691"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2ea62dd-5c7e-4c97-9f49-6f3b3128e3ef">
+                    <propertyInstance
+                      Id="d589a421-143f-4d87-ba12-be7eece1954c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0e77b51-f4bf-4493-8038-4bd3be78bb98">
+                    <propertyInstance
+                      Id="3d1cb2f8-24c1-43f0-9eac-b3d111159903"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="824950bd-6939-4c8d-8142-551cb3f3a97e"
+            name="Index"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2265652c-4a90-4581-84ca-725a5125ed34"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3DIndex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54490860-2c5b-4824-b9b3-8329752a5219"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16ced4cd-95e6-441e-8442-dac84c0767b8">
+                    <propertyInstance
+                      Id="0854d1c7-ddcd-4c70-8e79-dd84aa4572ac"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="271835e7-b2cf-4ff5-87b7-8df5f50dd584">
+                    <propertyInstance
+                      Id="1f9d56c3-fa77-4012-a1a9-e9f58828ef24"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b0944e6-3156-44fb-8cec-25483e23d493">
+                    <propertyInstance
+                      Id="b421fa03-2dfc-48bd-83c7-03b9df49a36a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="789b8394-b938-42f0-b691-f294214c6e1c">
+                    <propertyInstance
+                      Id="158a671a-0e3f-4f57-b002-6208a5930117"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c17eeda7-d6f7-48e9-9a64-e989a5937a0a">
+                    <propertyInstance
+                      Id="ce701d0c-da71-4257-be5c-e838d44bcd4a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e618305-cc2a-46d5-81c9-abe89131e96d">
+                    <propertyInstance
+                      Id="115d10e1-9007-4443-ae5d-96ae64e898df"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="57c141a6-a4dd-438e-b5a6-bb87a5a5352f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b3cf66bd-59ab-4d0b-a076-574764d60bf6"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b7c50f30-73bc-42c3-b286-e3ba871e2a0a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="99d0ecb0-81e2-4eac-8d0a-20f6b68485a0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b9c9416-bbd2-49c9-8887-505f1a0c645d">
+                    <propertyInstance
+                      Id="e14a3334-bc6d-4a50-99f3-30ee09db2fca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b8a452f-0dd5-4fbe-a67f-18cbd8f9e68e">
+                    <propertyInstance
+                      Id="3f76cfaa-7cb4-47ff-b516-871a01d57736"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2dc84eb-5b8d-4a95-b08c-146a84e3f4d5">
+                    <propertyInstance
+                      Id="3a70edf5-4b17-4336-90e1-db7434db647d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4233492e-629f-4444-a968-51916c9dba58">
+                    <propertyInstance
+                      Id="2d66e6c3-b0d4-4bd5-b92a-c554081da344"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54e07972-d65b-4021-bbaa-71adaf54c5d0">
+                    <propertyInstance
+                      Id="120ee000-34fc-4585-9107-3b43b0c69a40"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99a0913d-ef44-4e55-9eb4-5f2745cb964b">
+                    <propertyInstance
+                      Id="2eed9ec1-b0a0-4fd2-b417-f39f042fca48"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0d56ff1d-c880-4221-8154-85c86b0605f8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2bf45a90-b65a-4e8e-a928-72afaafd0b69"
+                  name="users"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7c4abda6-2af4-4b41-ad6a-170a81b7e829"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)]) ParameterIdentifier%3Dusers"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="439072a8-ee18-43ad-88e9-b7757ec12e11"
+                      LastKnownName="Users"
+                      LastKnownLocation="Package2_1456.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="68645186-bf95-4124-af2a-69277896f986"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="122e8cf5-a7de-4da7-8565-7d3930865524"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ba2f75e5-56ba-48b2-90da-34a86dfee738"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e163f48f-8b9e-4619-a8ec-0151c1131f0e">
+                    <propertyInstance
+                      Id="94b2eff2-61d9-4eaf-87f1-0bf71089c1c8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45618d33-4ed2-47b3-895d-a4260b052248">
+                    <propertyInstance
+                      Id="016eda63-e5a7-472e-8e08-c01c61d2aced"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c08fde3-9136-4e53-bc91-c1cae60f69e5">
+                    <propertyInstance
+                      Id="edd4092c-5700-43fa-bede-7b6a8ecde2a1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a155a38d-6a15-46d3-aac3-00630ec86ed3">
+                    <propertyInstance
+                      Id="35f2f539-df6a-45d7-928e-de4055ba3a91"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87d39204-6717-4523-857b-f093018bdd1f">
+                    <propertyInstance
+                      Id="045a81ca-372b-4e5a-aa5a-88ae5eb314e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4f24212-2d23-4bd8-951b-1b81a25495ad">
+                    <propertyInstance
+                      Id="bf1efdf1-73ba-42ff-90c8-ecc78ee35a59"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08473fd8-87b5-4b87-ac3c-feb9a914b8d8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9021a99e-7843-4bb6-86cf-5c4f45aa5973"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="893a33b2-dd1b-434f-9835-151b07099e00"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="61d3d3b2-486e-4123-98ba-47cc21417698"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package2_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="93bcc993-ab1a-43d8-b3e9-c083c2b8ed93"
+            name="DeleteConfirmed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7fe0282e-a582-4a03-aa39-31a6f8098d15"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDeleteConfirmed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f0977359-3643-4114-b848-60e3f5d94823"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63d32fe2-4853-4d74-a45c-b654705fdfce">
+                    <propertyInstance
+                      Id="df323703-08ab-49e0-ad9c-e8340dddaecf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a4d230f-7849-4018-8a10-becad72202e7">
+                    <propertyInstance
+                      Id="f250ae87-89c2-46a4-938c-6868c9d19a22"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9959f606-8f2b-4184-b96b-c2d81c9e0182">
+                    <propertyInstance
+                      Id="55aabee4-5a7a-4b97-bd8b-e881f93040b0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3c90e7b-bbf1-44ec-ab3c-e83b775c1171">
+                    <propertyInstance
+                      Id="b1e87589-6e9d-435f-9e79-14687b96645a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59742f4a-25a4-4d2d-bcba-116abe1b9d19">
+                    <propertyInstance
+                      Id="22c2526c-5bb1-4ff3-81cb-e54fd19d89c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0a9aed5-0cb5-4bc3-9e4a-819f52a4fa37">
+                    <propertyInstance
+                      Id="2a6afaf0-e0ed-4a01-b490-d546f627d998"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8d02412-2307-4f13-ade0-d53c16ff96d5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="381aac5c-cadf-4b6a-ac61-f7e807e0d7f8"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0084036d-9bfe-441a-8466-35fe970ba37e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDeleteConfirmed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="369a3444-6806-4cee-a617-45d9d96946fa"
+            name="Details"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1eeb667f-08bb-43fa-bac9-1469cf5cc33c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDetails OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f249e8c4-076d-4016-a4f8-2981d277228d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb7f39e2-c147-48d4-8985-4a78394b2c42">
+                    <propertyInstance
+                      Id="8de66567-2f65-4738-a5b4-23f2b09d8617"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24bbef6b-e038-472a-b4d4-9948a0d6b4fd">
+                    <propertyInstance
+                      Id="d40f8a9a-9a50-493c-a94a-b132459f0622"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="622af2eb-3ee3-428d-b812-3e8905098b0e">
+                    <propertyInstance
+                      Id="b6bccd69-ff67-4f20-9b59-b62417ae4737"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91905518-9249-459b-8c4f-3d60ed6b660f">
+                    <propertyInstance
+                      Id="d9b52852-b2b2-4665-96e5-90391d1f8459"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6dcd04e-8bac-444c-b32f-1f1d6fe30744">
+                    <propertyInstance
+                      Id="09f90b7a-8549-47c6-a3d3-71dcb9901971"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7aacfb44-77f2-49ff-b5fc-f401e84f4796">
+                    <propertyInstance
+                      Id="95661ffa-1d8f-4f8e-bb61-0d9fbc3e7573"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d1988da6-e202-48c7-b356-847dc5df85ee"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c060b572-6495-4499-9ba0-f7dc84b1c12c"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d2a65768-843f-48ee-9d25-c76fed6db8ce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDetails OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="61d3d3b2-486e-4123-98ba-47cc21417698"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package2_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="43a4fc59-1ddc-47a9-97d4-1f6da79444ce"
+            name="Dispose"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a50b6112-26bd-4c80-aa40-f442e72e41c6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="640e879b-5594-4e22-b8f2-30429e24cffa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9f26521-f501-4f83-918d-f32a1289b5cf">
+                    <propertyInstance
+                      Id="a48ca3c0-e2b3-4157-8afb-a07221a09d44"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c02948c-e5e4-4b72-98d8-0dfca5ae5eda">
+                    <propertyInstance
+                      Id="604fdda0-ab97-4caf-bdda-a34efd71ce46"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53bb9121-9fc2-4dd0-b600-5cf36bf7a7ea">
+                    <propertyInstance
+                      Id="add16c4b-c61b-4a5c-85b6-15b0a9da003a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39d4f7bb-4197-4b36-be5e-633f95c8a09b">
+                    <propertyInstance
+                      Id="23fa2cbd-47b3-4e7b-a343-ab5cc6bcadac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ad6e9d7-f648-4e4a-a16f-fb138fccae0e">
+                    <propertyInstance
+                      Id="16888adb-2d82-449d-8c1c-45a830b12fa7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3530df6f-e183-4514-bad3-494c33a65a8c">
+                    <propertyInstance
+                      Id="b4b014d9-bf34-4a04-bab6-ed32f8d58448"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bce1c9d6-db7f-4c56-9cf9-53168c7ad6c3"
+                  name="disposing"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cf031597-2305-4910-9c16-1e61e825a9c6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Ddisposing"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="SiteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c8cb6bbf-1813-4606-aab8-05ba46c65fce"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fae1655b-0653-4642-918a-427108fb85b4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8785cdc1-4185-4655-81da-41afcaa14e9f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbf5e446-1a5e-4814-9cd2-3bf2f46668be">
+                    <propertyInstance
+                      Id="8a5e16ba-19ce-467e-8c76-1ae02376d478"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66574bf5-a3ac-4c32-819a-567a87919e81">
+                    <propertyInstance
+                      Id="37d6ebca-ebb4-42da-88fc-5129499fd9dd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="deeaefa3-7af2-4c5d-bbd7-28b2510fca3c">
+                    <propertyInstance
+                      Id="9c90231a-6bdf-4a31-9c40-b5d6377c95b4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="648a6f7e-3963-4202-985c-1c67c595135a">
+                    <propertyInstance
+                      Id="7522b8f7-0acb-4a70-a6bc-b2a2e5554474"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d87d952f-0181-4b00-938a-162c8b8cd863">
+                    <propertyInstance
+                      Id="f95852d7-9b20-4c09-baef-00a30f61c2ce"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1543a276-2306-4944-b700-f681d7257c56">
+                    <propertyInstance
+                      Id="dc54e95e-a496-479a-8e5c-868ea57a1b48"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e00c11ac-41f7-4e21-a528-eb3c2d048691"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d1019ace-d831-4a74-bd29-d50bb3b2c9c6"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="afb6e03e-3be8-4e97-b473-310ea0f802d2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DNullable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]))]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="61d3d3b2-486e-4123-98ba-47cc21417698"
+                      LastKnownName="Nullable&lt;Int32‎&gt;"
+                      LastKnownLocation="Package2_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e0f8ea1b-1400-4c90-878f-264188a78744"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="59741cf0-82d5-400d-adb2-12acd5158615"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9d1d737c-ed24-4582-9b8f-4d82ed5026d3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26853e58-68dc-4c72-8808-2bc42e5fdc0b">
+                    <propertyInstance
+                      Id="d0ff953b-5c9f-43a8-a750-4918a6f026bd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44d178ab-023a-481f-be77-8e5022d957cb">
+                    <propertyInstance
+                      Id="189e9cb0-52c8-49ed-a6ff-2e76a4552f4a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3f57507-56f4-4436-8737-e194259db771">
+                    <propertyInstance
+                      Id="136a3c00-ff6a-47fb-9a31-751d517e3cd4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac232148-1f70-496b-8d3e-8d9fb9cf1df4">
+                    <propertyInstance
+                      Id="0a75429e-5027-43f3-a107-49c31870c72b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47af71c3-8138-45a6-aee0-8ecf25a73b2e">
+                    <propertyInstance
+                      Id="ffbb4f54-400d-45ae-9f39-a0af0f637373"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1201050b-1438-49f7-baed-3cc04a128515">
+                    <propertyInstance
+                      Id="ca2e4fce-0e2a-49a3-86cb-5dfe7dbb509a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="86d77b44-d3f7-4e94-a36b-a01602778dab"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de77e7f4-9036-434e-99cf-baf4e53d4291"
+                  name="users"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="90ff3ad8-705c-4060-b6b4-909d2a8b2547"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers)]) ParameterIdentifier%3Dusers"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="439072a8-ee18-43ad-88e9-b7757ec12e11"
+                      LastKnownName="Users"
+                      LastKnownLocation="Package2_1456.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="20fc381e-11c2-40aa-830d-eb16caad025b"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2de34cd8-f8de-4ac9-8fcd-fbf4c6bb5f36"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DAdminController Member%3DCreate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="882dc6bc-9d05-47a0-9aed-fc50e931ccfd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d97e802-33d2-48aa-b731-0f44ed91c243">
+                    <propertyInstance
+                      Id="b274fb6c-dd59-4aad-af25-f1825a7ae5c7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4788301-5e9c-41ce-8202-4ffcd354a9bb">
+                    <propertyInstance
+                      Id="25286adb-50b5-4ae2-95e3-767ca3e71631"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d2d5bcb-84ec-482c-990d-f7f7cf245ad3">
+                    <propertyInstance
+                      Id="451605d7-925b-4816-9c34-6618e84d84d3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9762f680-aeca-4c61-98c7-d5c54837a3fd">
+                    <propertyInstance
+                      Id="f5112404-9700-44c7-92b5-d6e0f4a44069"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f74d2d0d-a3e2-4712-abeb-cef85e20bca0">
+                    <propertyInstance
+                      Id="f1d5e126-7ba5-41d9-a240-3948c2fe3ab0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af2f7a5f-0517-4927-a987-11b761b99b63">
+                    <propertyInstance
+                      Id="961a9fcf-7de2-4667-8ef2-13e5d213c359"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="187385f7-921d-4d6d-ba44-bc5c6e0c1415"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="447f4e86-f5b5-43ab-8cdc-743679f13b86"
+        name="BankAccountController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="aa882f6e-bd79-4d89-8522-cfc78abe8f04"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="86d851cf-8135-4027-983b-58f0a087de4b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a82a6543-b79e-4841-9ede-13fee9752140">
+                <propertyInstance
+                  Id="153d3001-497c-48ed-bd8e-e9d2b6f0c9b4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3e9298c-a864-439f-b08e-6f88f2e3b8b4">
+                <propertyInstance
+                  Id="c800a28a-38b1-44e0-b98a-697c04554cb4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbe23556-0b85-4a04-b4a4-c7b5422c52e7">
+                <propertyInstance
+                  Id="914cf67e-ddb6-46e1-aa61-26fe570b39ee"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c40f57c9-941c-4373-82d7-c0ddf48bdd55">
+                <propertyInstance
+                  Id="86f58e50-77af-4d37-9614-2b5a3ee91624"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="86d32b77-fa93-4fec-9ede-b63f4cb524e8">
+                <propertyInstance
+                  Id="d2083edc-4df2-4107-8536-376d3e89529e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="72de5997-4069-448c-b914-80f2da996194"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b190124e-25c4-47b8-bfdc-24be50c674a4"
+              LastKnownName="Controller"
+              LastKnownLocation="Package4_1204.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="47c9cb24-4834-4c4b-82c8-851c3afec695"
+            name="bankDB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3147bbb2-fd04-4e7a-be9d-179516e6353b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3DbankDB"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4534b3f8-8608-49f7-8581-64a8c589e35a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b361c50-a517-4ebb-a551-bdf3a91e0c79">
+                    <propertyInstance
+                      Id="c41f8a0f-06bf-4efc-8e0f-0d72a43119e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="446bb6f4-6b66-492a-86f1-d3edc30e969c">
+                    <propertyInstance
+                      Id="81e71bd8-ee0d-45e7-8105-968858b1323d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1295bc81-bffb-4830-9dae-f7c05c5d94e9">
+                    <propertyInstance
+                      Id="8fda6347-81fc-4bc6-9474-e437812d232a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7296d17d-2180-4963-b70c-4698264d9374">
+                    <propertyInstance
+                      Id="309c6c90-4333-4764-a0d9-123c7d16d2fc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c72bbad-a9af-49d9-998b-0dd7fe49ba31">
+                    <propertyInstance
+                      Id="5a4e3d71-1797-4256-aa48-abb7daeac5e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8690c928-595e-44ff-bfd1-ad26083021bd"
+                LastKnownName="BankDB"
+                LastKnownLocation="Package2_1456.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="84b2b744-c6b1-41f9-86ec-d7a37fbcaeb8"
+            name="BankAccountController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="87fa8ae1-f172-4c4f-955f-96ea71d53f43"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="967037ba-fc3b-45d5-a8b8-757add1457c9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dd3f245-0a3f-440e-a342-f5588dca014b">
+                    <propertyInstance
+                      Id="94d14f2d-b4b2-46b0-bbff-62c104de53b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbb5baec-43dc-49ac-a4e1-7db74989dd01">
+                    <propertyInstance
+                      Id="30e33fdd-4cd1-42cd-b172-cb83675e56dc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="484b16f0-111c-47c4-8bb6-1502ce9e41e6">
+                    <propertyInstance
+                      Id="1e69a979-70d7-49ed-9d86-923d83dec020"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4317ea05-dabd-47be-94e4-896e627f181f">
+                    <propertyInstance
+                      Id="26efdb62-8e4f-47f9-a88c-9d9c6a3c40a3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b117de8-412a-4426-a041-1a58780e3b4e">
+                    <propertyInstance
+                      Id="eb282cf1-b4c4-43dc-9a99-f09e6ed19056"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54fa1a52-01da-4af7-a547-226127fdb90c">
+                    <propertyInstance
+                      Id="9ca24bc7-7fb3-4947-a057-8ee97e203c43"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f6cc7ced-20dc-4270-8075-04ad80ae0e5f"
+            name="Index"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="81c00d01-7276-41b0-9a55-22600984dd45"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3DIndex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="33deaa76-0aee-4501-8383-8bd491d6c600"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a99ef983-6861-43a0-8256-f170412c2814">
+                    <propertyInstance
+                      Id="2cf6afe6-8b0c-4cfa-9056-dfc1111781e9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e4d65ca-bc00-4cdd-a1ca-600680fd8437">
+                    <propertyInstance
+                      Id="3bd0b2e7-719c-47d5-8647-91299fab0c43"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34e25004-f6bc-44bf-ace5-05dcd489d4e7">
+                    <propertyInstance
+                      Id="130256f3-d1b7-46e3-a486-19f8e897bf0d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3141ab2c-c758-48cd-8b6e-4d0583155b9e">
+                    <propertyInstance
+                      Id="9e53fa07-4e78-42a7-9c5b-af9c896619ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3512e2fd-5d6e-457d-b269-4bd812cb8657">
+                    <propertyInstance
+                      Id="db6532a9-4fff-419b-ba60-a201f438b57e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65b961b4-5ad3-4bcb-bb05-848ed732e3fa">
+                    <propertyInstance
+                      Id="d6e3f9d4-c8f1-47d8-b147-f81e07dbe8b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5119262-06a4-4022-aaaf-f9b8a2b635a2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="90b783da-76e1-48b0-a88d-3940dcc1f8dc"
+            name="Withdrawal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3067c78d-c1b2-45b1-b351-321b024e854f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3D(Name%3DWithdrawal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DWithdrawalModel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b098389e-70ed-41a1-994f-7c08c5ad2abd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="281a638a-051d-4a93-8731-0db195550196">
+                    <propertyInstance
+                      Id="0f4cdf7a-453a-4b69-890f-b472364deac1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35dbdd1e-b34e-4d7f-9d31-2dc11f581463">
+                    <propertyInstance
+                      Id="86444a4d-d47e-4a54-8c28-c81b92b3ff23"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65fc9014-b6b7-496e-a0f4-a6c5732979fd">
+                    <propertyInstance
+                      Id="59bf7593-7157-4c04-bb92-5a7496d988a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efe80cd7-30d8-474b-9f64-d615db00c0a1">
+                    <propertyInstance
+                      Id="9e0c699b-5d2b-4dfd-ae15-0d331a15d4cb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0cea119-2ad5-49b9-86e8-89ddadde1510">
+                    <propertyInstance
+                      Id="1cbbbb88-4d7b-442f-8917-85803cd302e2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="776f1281-ffe2-4a5a-b9fa-8c4ef97edfa5">
+                    <propertyInstance
+                      Id="f27d5d7b-fcd3-4a9d-8b6a-671722c2b7cd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2c8ffd1a-db86-4bb2-a59d-5af23ff99cf6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="509b0586-422c-4490-b184-d511c8f8dc3e"
+                  name="model"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="71496ef4-c495-4ffb-89b5-43bdc65e4cd3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3D(Name%3DWithdrawal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DWithdrawalModel)]) ParameterIdentifier%3Dmodel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="426da716-af62-4cdb-b158-ee0a6648e427"
+                      LastKnownName="WithdrawalModel"
+                      LastKnownLocation="Package2_1456.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4ded9e29-7af2-4a83-bb58-17f69c25a6b1"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2de9c803-90e0-4777-8938-8e0532aa5c59"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3DCreate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab8a5a8f-15b3-4596-bae1-35d63ad055f8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c8b55ce-4c2b-4179-b7d1-3cbe253783c0">
+                    <propertyInstance
+                      Id="ba17527c-18a7-41ed-aead-bcfce20d84a5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9225780-ef09-45f3-a42a-0e04eb8ee65c">
+                    <propertyInstance
+                      Id="5d800451-eeb3-4f79-8bc7-56639156f50e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9cbf8de-c1ef-467b-b1e5-4f490756b243">
+                    <propertyInstance
+                      Id="f45ce76f-31a2-46d1-8fa1-b3222f369eae"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaee4ac8-8c5d-4a5e-8541-8fc35532d4d7">
+                    <propertyInstance
+                      Id="4870bb0a-d4c8-4aac-8a41-dcbc733d1273"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3826b89-2527-4f9a-ab64-15f588280ce2">
+                    <propertyInstance
+                      Id="b85b868e-3c04-47e8-94bb-08e0e36b5e17"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2666d6da-9ab7-4524-acec-b0f602f643cb">
+                    <propertyInstance
+                      Id="16bd0e3d-7e1c-4f9e-b445-ed988f67c0bb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f0ad6353-841e-4532-9cc0-4dddbce3cdd9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="02ac1925-5d5e-4efb-b89a-ecf3a1d9ef4d"
+            name="Details"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0e398087-ed48-4560-aa34-c129420efcc0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3DDetails"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a8dcd607-001e-41df-a67a-2d4e98db1041"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cea5ec32-a80d-4156-a800-b5d920027ae6">
+                    <propertyInstance
+                      Id="6a4b3485-441f-405f-8599-08720abd8dfb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="844918eb-1de2-4ae4-9a50-849d127aee5d">
+                    <propertyInstance
+                      Id="938b3f13-7e75-44db-ae1c-536f688e2ae9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecd05b70-e20d-42a1-a46f-4010ed8de22c">
+                    <propertyInstance
+                      Id="b30c06bc-c957-498b-a392-abacc5310d2b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecc59634-12db-4d31-bd40-86f5d29d40bc">
+                    <propertyInstance
+                      Id="77f0e6d4-0ac3-4dbd-810c-70031992c692"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b257bc5-b969-4b66-87be-1d77d589a479">
+                    <propertyInstance
+                      Id="fcd29b03-7e18-4f26-bf62-eef131b6d7e8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83358015-e3bf-41f9-92cb-36749b2d16ab">
+                    <propertyInstance
+                      Id="875a41ce-0e4f-4592-8469-106ef7ccf639"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e1eeb77-e332-4f9a-8282-1961c8151a60"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b0004121-b496-4e3d-b413-cd70fd2f898a"
+            name="Withdrawal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c42dc0c9-ab96-44db-87cc-609925feb247"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Controllers Type%3DBankAccountController Member%3DWithdrawal"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e228477d-d821-480a-b31e-b7345a47dfbf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bd666e1-c589-402c-b776-880fd7765967">
+                    <propertyInstance
+                      Id="8aed7daf-3cf1-41e7-9984-ebb165650d8e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="420e8c01-7283-4238-ac67-b9e57ccf1b67">
+                    <propertyInstance
+                      Id="40579c42-6c14-4b03-9e84-aa0ae0925ce3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bbf3e4f-cbc9-4701-9b51-189cd7d89187">
+                    <propertyInstance
+                      Id="17e76dd1-a9f7-4acf-8ad7-513271cf50e3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39ce5dcd-5d98-4b17-8607-f8f4e3debf3e">
+                    <propertyInstance
+                      Id="3f551dfa-81cf-4247-8cfb-60dd2b85ac1d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e81866c7-2c95-451a-ac01-00cf99cf83fd">
+                    <propertyInstance
+                      Id="30702bb7-ebb6-4aec-85f6-42c47ee11eac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="181d33e7-ae1e-4451-adb6-f1d32da36145">
+                    <propertyInstance
+                      Id="d1c23ef6-4fc1-47db-a083-09e2ad765b0c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3b2dbdd3-7a04-4de4-a25e-dd7823a1ed3e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="673a0ac9-277e-47e4-8536-1bfef96a83d5"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package4_1204.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -3,8 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
 using System.Web.Services;
-using MongoDB.Bson;
 
 namespace DabisBank
 {
@@ -14,10 +15,10 @@ namespace DabisBank
 
     public class Bank1 : System.Web.Services.WebService
     {
-        private BankDB bankDB = new BankDB();
+        private MorBankEntities bankDB = new MorBankEntities();
 
         [WebMethod]
-        public bool hasBankAccount(string id)
+        public bool hasBankAccount(int id)
         {
             if (bankDB.Accounts.Find(id) != null)
                 return true;
@@ -26,12 +27,12 @@ namespace DabisBank
         }
 
         [WebMethod]
-        public bool CreateBankAccount(string id)
+        public bool CreateBankAccount(int id)
         {
             if (hasBankAccount(id) == false)
             {
-                Accounts bankAccount = new Accounts();
-                bankAccount.UserID = ObjectId.Parse(id);
+                Account bankAccount = new Account();
+                bankAccount.UserID = id;
                 bankAccount.TotalCash = 1000000f;
 
                 try
@@ -57,7 +58,7 @@ namespace DabisBank
 
 
         [WebMethod]
-        public double CashInAccount(string id)
+        public double CashInAccount(int id)
         {
             if (hasBankAccount(id))
             {
@@ -68,7 +69,7 @@ namespace DabisBank
         }
 
         [WebMethod]
-        public bool ChargeAccount(string id, double CashToCharge)
+        public bool ChargeAccount(int id, double CashToCharge)
         {
             if (hasBankAccount(id))
             {

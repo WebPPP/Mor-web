@@ -22,13 +22,26 @@ namespace DabisBank.Models
     [MetadataType(typeof(AccountsValidation))]
     public partial class Accounts
     {
+        public int UserID { get; set; }
+        public int AccountNumber { get; set; }
+        public double TotalCash { get; set; }
+        public Accounts()
+        {
+
+        }
+        public Accounts(Account accounts)
+        {
+            this.UserID = accounts.UserID;
+            this.AccountNumber = accounts.AccountNumber;
+            this.TotalCash = accounts.TotalCash;
+        }
     }
     public class AccountsValidation
     {
-        [Display(Name="Account Number")]
+        [Display(Name = "Account Number")]
         public int AccountNumber { get; set; }
         [DataType(DataType.Currency)]
-        [Display(Name="Total Cash")]
+        [Display(Name = "Total Cash")]
         public double TotalCash { get; set; }
     }
 }

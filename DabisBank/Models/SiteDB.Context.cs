@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DabisBank.Models
+namespace BrandesBank.Models
 {
     using System;
     using System.Data.Entity;

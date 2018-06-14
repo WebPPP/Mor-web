@@ -11,8 +11,8 @@ namespace DabisBank.Controllers
 {
     public class AccountController : Controller
     {
-        private sitedbEntities db = new sitedbEntities();
-        private BankDB bankDB = new BankDB();
+        private mordbEntities db = new mordbEntities();
+        private MorBankEntities bankDB = new MorBankEntities();
 
         [HttpGet]
         [Route("Login")]
@@ -34,8 +34,8 @@ namespace DabisBank.Controllers
             {
                 var userName = new SqlParameter("@userName", loginUser.UserName);
                 var pass = new SqlParameter("@pass", loginUser.Password);
+                Users user = new Users(db.Users.FirstOrDefault(a => a.UserName == loginUser.UserName));
 
-                Users user = (Users)db.Users.SqlQuery("SELECT * FROM dbo.Users WHERE UserName = @userName AND Password = @pass", userName, pass).FirstOrDefault<Users>();
                 if (user == null)
                     return View(loginUser);
                 else
@@ -92,7 +92,7 @@ namespace DabisBank.Controllers
             Users user = Session["User"] as Users;
             var id = new SqlParameter("@ID", user.UserID);
 
-            Users editUser = (Users)db.Users.SqlQuery("SELECT * FROM dbo.Users WHERE UserID = @ID", id).FirstOrDefault<Users>();
+            Users editUser = new Users(db.Users.FirstOrDefault(a => a.UserID == user.UserID));
             if (user == null)
             {
                 return HttpNotFound();

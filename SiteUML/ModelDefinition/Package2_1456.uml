@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="689fd87c-1a9f-453b-af68-17e531ffea95"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="02ffe17e-8357-4e05-9e38-c3da58d66ca9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBrandesBank.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8690c928-595e-44ff-bfd1-ad26083021bd"
+        name="BankDB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b7855fb0-cbbb-4a33-9c93-022570eb2950"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DBankDB"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2a921fcd-01fb-4725-a872-148ba561408f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5b49c1b-2b41-4e2e-bf1a-83298b1a72e6">
+                <propertyInstance
+                  Id="6356e2a7-6571-4791-91f3-0929cd132be8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5cbcd71-8a54-4927-8627-67559f72d6e4">
+                <propertyInstance
+                  Id="6f677447-702f-4543-9b24-880b92110d44"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0fd8109-3d5a-4f3c-bc4a-196d65a1c1e8">
+                <propertyInstance
+                  Id="00af060a-5f57-41a6-aeec-0774699fd04a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c6a8cab7-2c09-4884-af79-e17915c87ef0">
+                <propertyInstance
+                  Id="b9015bd9-9ae3-4cc4-8009-2c9589d1f663"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="990c8ed0-01f6-462e-be6b-afc4d6dad7fa">
+                <propertyInstance
+                  Id="452d4919-de79-4442-b5f3-4649c3b31876"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="439072a8-ee18-43ad-88e9-b7757ec12e11"
+        name="Users"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8a07c558-5b78-45f6-a46c-3d9f6dfc6569"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DUsers"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fe7bfc4b-5e13-4b1f-a576-bf3f729bd537"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2102e19-e89d-4578-b794-c88fea8c2229">
+                <propertyInstance
+                  Id="3a779f58-c417-44f9-8c6b-a7f90b7320fa"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e70c560-a14c-4e61-8c05-5cc82f9fe5e2">
+                <propertyInstance
+                  Id="33a67160-d30d-4c81-a7ac-f91c8e472320"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="08b3ded9-a595-437e-b244-d8465ef93dec">
+                <propertyInstance
+                  Id="63ee25fe-b23d-4acc-be14-049c39d41eb6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d079c42-f166-413b-b3c2-7c16af09f03f">
+                <propertyInstance
+                  Id="8a28d5ff-14e6-4ef6-ab12-59444e6de16d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4231ace-ffb9-4f1a-b639-28497684f1d0">
+                <propertyInstance
+                  Id="c4d3c144-ab9f-485d-803b-044cca355c1d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3d887b5a-3d0a-4ba0-8e23-4ec85c8fc94a"
+        name="LoginVM"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="efc086a4-eed1-44d2-a4b3-1b6e95c0cbaf"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DLoginVM"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="598417f3-53af-41c5-8e95-403340ef5acf"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="497fdd99-0a3e-418e-8304-8fb3392b6c2b">
+                <propertyInstance
+                  Id="432a86d3-d210-4e47-9a32-fa64e1ba6d60"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3dcf74e7-d1e2-4b85-a429-d151a14be646">
+                <propertyInstance
+                  Id="add912bc-1417-4339-8076-7ed1ea9e6e0e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f91f55b1-2d20-4e47-9068-69774e44d7fe">
+                <propertyInstance
+                  Id="4eb3821d-c60c-42a6-b150-8b121951ce76"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00f9a214-1440-4da4-bce0-fb3a3e5a137b">
+                <propertyInstance
+                  Id="b82ec8b8-2f59-4a98-aa27-a533ab03c7e3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d1e4bb4-cebb-4974-bfeb-a031b61df0a9">
+                <propertyInstance
+                  Id="49b193f0-ec9d-4f89-ad41-88f8c0e2168c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12cb4007-9747-4172-b705-8db220ca7fd4"
+        name="sitedbEntities"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cf316928-ad6e-408c-aa4b-8dacabd9053f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DsitedbEntities"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6650dab5-2db6-45d1-88bd-d762449b2b0c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c742da8b-de12-419d-82da-d1f7cbdca0ab">
+                <propertyInstance
+                  Id="6593507b-4982-4b38-8395-9e80d1229826"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="de10aed9-463c-4281-a054-2d3dbd9e624c">
+                <propertyInstance
+                  Id="4914f4cb-d946-4b38-8603-f299b1513a3c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c8593d2-8988-49fe-8405-53d070649b53">
+                <propertyInstance
+                  Id="4a03b17e-fa28-42e9-bcc2-4bd22905a85c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e9ff6b18-079b-4de0-bea5-a779ab4c77da">
+                <propertyInstance
+                  Id="8f0ce2fc-e579-4d26-adf4-4976a7d4c613"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f54ac40f-5c1b-4356-af9e-aab5c8d7dd49">
+                <propertyInstance
+                  Id="18d05926-9253-4f2d-a3f9-7851e80d566e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="426da716-af62-4cdb-b158-ee0a6648e427"
+        name="WithdrawalModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="851da4a4-085d-4c58-9e25-79608a1d738d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FBrandesBank%2Fbin%2FBrandesBank.dll&quot; Namespace%3DBrandesBank.Models Type%3DWithdrawalModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7505b559-7683-46b1-bc81-8c1ba72796c2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3eca074-92a9-4868-9036-f000dba1011a">
+                <propertyInstance
+                  Id="7728f254-7f23-4a4a-94e0-b195ced322ab"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e69c3de-05c7-494d-99d4-6e23c6d4b582">
+                <propertyInstance
+                  Id="12752f05-1453-48da-a0c1-2a9eca006ac0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="03287ff3-fc16-4ab2-94e0-f3a51684340d">
+                <propertyInstance
+                  Id="7fbc90f6-7acd-452e-84f8-42ffe230e197"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c7d7657-19b6-4bd7-a5c8-7149477023e6">
+                <propertyInstance
+                  Id="74382913-d910-4737-964f-229271f2f469"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5eca9c84-d620-4057-a76b-9391f1e98415">
+                <propertyInstance
+                  Id="8ed74bb3-d926-4422-acb8-4ad25797baf7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

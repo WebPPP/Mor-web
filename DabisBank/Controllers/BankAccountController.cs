@@ -9,7 +9,8 @@ namespace DabisBank.Controllers
     [SessionAuthorize]
     public class BankAccountController : Controller
     {
-        private BankDB bankDB = new BankDB();
+        private MorBankEntities bankDB = new MorBankEntities();
+
         public ActionResult Index()
         {
             return View();
@@ -19,7 +20,7 @@ namespace DabisBank.Controllers
         public ActionResult Create()
         {
             Users user = Session["User"] as Users;
-            Accounts bankAccount = new Accounts();
+            Account bankAccount = new Account();
             bankAccount.UserID = user.UserID;
             bankAccount.TotalCash = 1000000f;
 
@@ -43,7 +44,7 @@ namespace DabisBank.Controllers
         {
             Users user = Session["User"] as Users;
             ViewBag.userName = user.UserName;
-            Accounts bankAccount = bankDB.Accounts.Find(user.UserID);
+            Accounts bankAccount = new Accounts(bankDB.Accounts.Find(user.UserID));
 
             return View(bankAccount);
         }
@@ -58,7 +59,7 @@ namespace DabisBank.Controllers
         public ActionResult Withdrawal(WithdrawalModel model)
         {
             Users user = Session["User"] as Users;
-            Accounts bankAccount = bankDB.Accounts.Find(user.UserID);
+            Accounts bankAccount =new Accounts( bankDB.Accounts.Find(user.UserID));
 
             List<SqlParameter> param = new List<SqlParameter>();
             param.Add(new SqlParameter("@id", user.UserID));

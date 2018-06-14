@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bbe5f85f-1081-4b41-a3c5-0b1e71361fbf"
+  name="Site"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0abbe640-3c92-4f47-a06f-5d8d987dfd93"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSite"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ee94c9e7-9bfb-4bf9-8a36-a9cca0dd438d"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package1_1204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="65f40cbd-44dc-4eb2-a442-e4ca96e121fb"
+        LastKnownName="Models"
+        LastKnownLocation="Package5_1204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1d4f767a-72c6-410b-b878-e67249281477"
+        LastKnownName="BankService"
+        LastKnownLocation="Package6_1204.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

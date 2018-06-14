@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1d4f767a-72c6-410b-b878-e67249281477"
+  name="BankService"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="799211ae-9bf8-4aa0-a805-9e1ae54dda1b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSite.BankService"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9a59887c-12c0-444a-9050-2657aa3d823d"
+        name="Bank1SoapClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="46a1283e-8e0f-4eb6-8f98-df076814b32a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FDevelopment%2Fworkspace%2FWeb%2FAugmented Reality%2FSite%2Fbin%2FSite.dll&quot; Namespace%3DSite.BankService Type%3DBank1SoapClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d2eb4bc5-1818-4c0b-b126-ec8d019fab64"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1cc39c8-d13f-48c0-b96e-68ecce83a741">
+                <propertyInstance
+                  Id="bc95bf87-44a9-4c64-8036-8a0eb1f5be7b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53d2b802-9aa1-461b-ab04-70b8759d5a04">
+                <propertyInstance
+                  Id="30ed03ff-7d50-475d-9dde-22f02ec297bb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d2a3cf05-e252-4260-9225-2a7e16938693">
+                <propertyInstance
+                  Id="2aba1eec-48c1-4692-8157-6f148fd0c219"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="789da334-0e3e-49a3-94c9-7671a356b9f7">
+                <propertyInstance
+                  Id="07561741-3039-4c8f-aa1b-6b3035a06d66"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f175911-0e26-49c3-9d28-9f8c2255420e">
+                <propertyInstance
+                  Id="c6b799cc-b885-4c5f-b43c-13b8a9663e5e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

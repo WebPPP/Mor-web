@@ -1,0 +1,61 @@
+﻿@using Site.Models;
+@using Site.BankService1;
+
+@{
+    User user = Session["User"] as User;
+    ShoppingCart cart = Session["Cart"] as ShoppingCart;
+}
+
+@if (Session["User"] as User == null)
+{
+    <li>
+        <a href="@Url.Action("Login", "Account")"><span class="glyphicon glyphicon-log-in glyphicon-adjust"></span> Login</a>
+    </li>
+    <li>
+        <a href="@Url.Action("Register", "Account")"><span class="glyphicon glyphicon-registration-mark glyphicon-adjust"></span> Register</a>
+    </li>
+}
+else
+{
+    if (ViewBag.hasAccount == false)
+    {
+        <li>
+            <a href="http://dabisbank.gear.host/" target="_blank">Create Bank Account!</a>
+        </li>
+    }
+    else if (ViewBag.hasAccount)
+    {
+        <li>
+            <a href="http://dabisbank.gear.host/AccountDetails" target="_blank">@string.Format("Cash: {0:C}", ViewBag.AccountCash)</a>
+        </li>
+    }
+    <li>
+        <a href="@Url.Action("ViewCart", "Shop")"><span class="glyphicon glyphicon-shopping-cart glyphicon-adjust"></span> Cart(@cart.orderLines.Count)</a>
+    </li>
+    if (user.RoleID == 1)
+    {
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> @user.UserName<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li>@Html.ActionLink("Update Admin", "Edit", "Account")</li>
+                <li>@Html.ActionLink("View Users", "Index", "Admin")</li>
+                <li>@Html.ActionLink("Items", "Index", "Items")</li>
+                <li>@Html.ActionLink("View Orders", "ViewOrders", "Shop")</li>
+            </ul>
+        </li>
+    }
+    else
+    {
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> @user.UserName<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li>@Html.ActionLink("Update User", "Edit", "Account")</li>
+                <li>@Html.ActionLink("View Orders", "ViewOrders", "Shop")</li>
+            </ul>
+        </li>
+    }
+    <li>
+        <a href="@Url.Action("Logout", "Account")"><span class="glyphicon glyphicon-log-out glyphicon-adjust"></span> Logout</a>
+    </li>
+}

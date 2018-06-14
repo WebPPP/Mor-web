@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Site.Models.Order>
+
+@{
+    ViewBag.Title = "Orders";
+}
+
+<h2>Orders</h2>
+<h3>User: @ViewBag.userName</h3>
+
+<table class="table">
+    <tr>
+        <th width="15%">
+            Order Number
+        </th>
+        <th width="25%">
+            @Html.DisplayNameFor(model => model.DateTime)
+        </th>
+        <th width="40%">
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th width="20%">
+
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                <a target="_blank" href="@Url.Action("OrderDetails", "Shop", new { id = item.OrderID })">Order Details</a> |
+                @Html.ActionLink("Delete Order", "AdminDeleteOrder", new { id = item.OrderID })
+                @{ Session["ViewedUser"] = item.UserID; }
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+<a href="@Url.Action("Index", "Admin")">Return to Users</a>

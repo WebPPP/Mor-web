@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Site.Models.Item>
+@using Site.Models;
+@using Site.BankService1;
+
+
+@{
+    ViewBag.Title = "Shop";
+    User user = Session["User"] as User;
+    Bank1SoapClient bank = new Bank1SoapClient();
+}
+
+<div class="jumbotron">
+    <h2> Welcome to Ms Shop </h2>
+    <p> Here you can find out more about our products. </p>
+    @if (user != null && bank.hasBankAccount(user.UserID) == false)
+    {
+        <a href="http://dabisbank.gear.host" target="_blank">Create Your Bank Account Now!</a>
+    }
+</div>
+
+<div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3 ">
+                <div class="thumbnail centerThumb" style="height:380px; width:280px;margin-bottom:15px">
+                    <div style="height:130px; ">
+                        <a href="@Url.Action("Details", "Items", new { id = item.ItemID})" style="float:none; margin: 0 auto;">
+                            <img src="~/Content/thumbnails/@item.ImgPath" alt="thmbnail" width="255" height="135" class="img-rounded centerThumb">
+                        </a>
+                    </div>
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p style="height:120px">@Html.DisplayFor(modelItem => item.Description)</p>
+                        <div class="row">
+                            <div class="col-md-2 col-xs-2">
+                                @if (user != null)
+                                {
+                                    <a href="@Url.Action("AddToCart", "Shop", new { id = item.ItemID })" class="btn btn-primary" role="button">Add to Cart</a>
+                                }
+                            </div>
+                            <div class="col-md-5" style="margin-left:40%">
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

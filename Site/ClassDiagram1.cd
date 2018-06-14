@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Site.Controllers.AccountController" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAIEAAABgAACAAAQAAAAEAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Controllers.AdminController" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAAACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Controllers.HomeController" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQEACAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Controllers.ItemsController" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ItemsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Controllers.ShopController" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABwAAAAQJAAAAAAQAAAAAAEAAEAAACAADA=</HashCode>
+      <FileName>Controllers\ShopController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.User">
+    <Position X="15.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAACAAAAAAEAAAAAwAAgAAgAAiAQAIAAAAAAA=</HashCode>
+      <FileName>Models\CustomUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.Item">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQEgAAAAgAAAAAYAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Metadata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.OrderLine">
+    <Position X="13.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABQAAAABgAAAgAAAAACEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Metadata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.Order">
+    <Position X="11.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABABAAEAAAAAAIAAAAAAgAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Metadata.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.mordbEntities" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAACAAEAEACAAAAAAAAAAAEgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MorDB.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.OrderItem">
+    <Position X="15.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABAAAAABAAAAgAAAAACEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OrderItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.Role" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.Models.ShoppingCart" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQIAABAAAQEQAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ShoppingCart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Site.BankService1.Bank1SoapClient" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAEAEAAAAAAAgAAIAIAAQAAEAAAAA=</HashCode>
+      <FileName>Service References\BankService1\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Site.BankService1.Bank1Soap" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAEAEAAAAAAAgAAIAIAAQAAEAAAAA=</HashCode>
+      <FileName>Service References\BankService1\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Site.BankService1.Bank1SoapChannel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\BankService1\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
